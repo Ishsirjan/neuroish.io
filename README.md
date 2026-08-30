@@ -1,32 +1,32 @@
-# NeuroIsh Studio (private)
+# NeuroIsh Studio (password-locked Pages site)
 
-A **private** working studio for Ishsirjan — calendar, scripts, and outreach. It is not a public website. Do not turn on GitHub Pages. If this ever sits on GitHub, keep the repository **private**.
+A working studio for Ishsirjan — calendar, scripts, outreach — published as a **separate** GitHub Pages project. It does **not** replace [ishsirjan.github.io](https://ishsirjan.github.io) (the portfolio).
 
-Search engines are told to stay out. A password sits in front of every page.
+The public URL only shows a lock. The calendar and scripts stay behind a password.
 
-## Open it (only you)
+## Public URL (after you create the GitHub repo)
+
+Name the repository `neuroish-studio` (private). Then Pages will be:
+
+**https://ishsirjan.github.io/neuroish-studio/**
+
+Do not name the repo `ishsirjan.github.io`. That is already the portfolio.
+
+In the new repo: **Settings → Pages → Source: GitHub Actions**.
+
+Password (change it): `ish-private`
+
+Set `NEXT_PUBLIC_STUDIO_PASSWORD` in GitHub → Settings → Secrets and Variables → Actions if you want a different password on the live site. GitHub Pages is a public host; anyone with the URL *and* the password can open the studio. Do not post either.
+
+## Local
 
 ```bash
 npm install
-cp env.example .env.local   # then change STUDIO_PASSWORD
 npm run dev
 ```
 
-Local URL: [http://127.0.0.1:43147](http://127.0.0.1:43147)
-
-Default local password (change it): `ish-private`
-
-This is a lock on the door, not a bank vault. Combined with a private repo and no public host, strangers do not get the scripts or outreach drafts.
+[http://127.0.0.1:43147](http://127.0.0.1:43147)
 
 ## What is inside
 
-- Shortcut calendar — shoot, post, script
-- Frequency for BioIsh, Chardi Kala, and NeuroIsh
-- Spoken scripts (scroll-stop lines, full podcasts, LinkedIn)
-- Month of outreach drafts
-
-Cadence: about **7 hours a week**. Both podcasts sign off: **I am Ish. ishsirjan.github.io.**
-
-## Honest limits
-
-Scripts cite public papers only. No unpublished CNRS results. Not clinical advice.
+Shortcut calendar (shoot / post / script), frequencies, spoken scripts, outreach drafts. About seven hours a week. Both podcasts sign off: **I am Ish. ishsirjan.github.io.**

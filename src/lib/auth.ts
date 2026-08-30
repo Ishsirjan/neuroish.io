@@ -1,5 +1,9 @@
-export const SESSION_COOKIE = "neuroish_studio"
+export const SESSION_KEY = "neuroish_studio"
 
 export function studioPassword() {
-  return process.env.STUDIO_PASSWORD || "ish-private"
+  return (
+    process.env.NEXT_PUBLIC_STUDIO_PASSWORD ||
+    process.env.STUDIO_PASSWORD ||
+    "ish-private"
+  )
 }

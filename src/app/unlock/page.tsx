@@ -1,15 +1,7 @@
-import { unlockStudio } from "./actions"
-import { Button } from "@/components/ui/button"
+import { UnlockForm } from "@/components/unlock-form"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
 
-export default async function UnlockPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ error?: string }>
-}) {
-  const { error } = await searchParams
-
+export default function UnlockPage() {
   return (
     <div className="flex min-h-full items-center justify-center px-4 py-16">
       <Card className="w-full max-w-md">
@@ -23,24 +15,10 @@ export default async function UnlockPage({
         </CardHeader>
         <CardContent>
           <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
-            Scripts, outreach, and the calendar stay off the public web. Enter
-            the studio password.
+            The public URL only shows this door. Scripts, outreach, and the
+            calendar stay behind the password.
           </p>
-          <form action={unlockStudio} className="space-y-3">
-            <Input
-              name="password"
-              type="password"
-              autoComplete="current-password"
-              placeholder="Password"
-              required
-            />
-            {error ? (
-              <p className="text-sm text-destructive">That password is wrong.</p>
-            ) : null}
-            <Button type="submit" className="w-full">
-              Unlock
-            </Button>
-          </form>
+          <UnlockForm />
         </CardContent>
       </Card>
     </div>
