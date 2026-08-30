@@ -111,7 +111,13 @@ function ShellInner({ children }: { children: React.ReactNode }) {
       </main>
       <footer className="border-t">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-4 py-6 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <p>Built from ishsirjan.github.io, your papers, and a CNRS-sized week.</p>
+          <p>
+            <a className="underline" href="https://ishsirjan.github.io">
+              ishsirjan.github.io
+            </a>
+            {" · "}
+            Built for a CNRS-sized week.
+          </p>
           <p>Checkboxes stay on this browser only.</p>
         </div>
       </footer>
