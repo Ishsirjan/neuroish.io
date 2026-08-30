@@ -1,7 +1,8 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { Suspense, useMemo } from "react"
 import Link from "next/link"
+import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { calendar, planMonth } from "@/data/calendar"
 import { scriptById } from "@/data/scripts"
 import {
@@ -22,24 +23,58 @@ function dayNumber(iso: string) {
   return iso.slice(8).replace(/^0/, "")
 }
 
+function defaultDay() {
+  const today = todayIso()
+  return calendar.find((d) => d.date >= today)?.date ?? calendar[0].date
+}
+
 export function ShortcutCalendar({
   compact = false,
 }: {
   compact?: boolean
 }) {
-  const today = todayIso()
-  const firstWithWork =
-    calendar.find((d) => d.date >= today) ?? calendar[0]
-  const [selected, setSelected] = useState(firstWithWork.date)
-  const [filter, setFilter] = useState<ActionKind | "all">("all")
+  return (
+    <Suspense fallback={<p className="text-sm text-muted-foreground">Loading calendar…</p>}>
+      <ShortcutCalendarInner compact={compact} />
+    </Suspense>
+  )
+}
 
-  const selectedDay = calendar.find((d) => d.date === selected) ?? firstWithWork
+function ShortcutCalendarInner({ compact }: { compact: boolean }) {
+  const today = todayIso()
+  const router = useRouter()
+  const pathname = usePathname()
+  const params = useSearchParams()
+  const fallback = useMemo(() => defaultDay(), [])
+  const selected = params.get("day") ?? fallback
+  const filter = (params.get("view") as ActionKind | "all") || "all"
+
+  const selectedDay = calendar.find((d) => d.date === selected) ?? calendar[0]
   const actions = dayActionItems(selectedDay)
 
   const blanks = useMemo(
     () => (new Date(`${calendar[0].date}T00:00:00Z`).getUTCDay() + 6) % 7,
     []
   )
+
+  function go(next: { day?: string; view?: string }) {
+    const usp = new URLSearchParams(params.toString())
+    if (next.day) usp.set("day", next.day)
+    if (next.view) {
+      if (next.view === "all") usp.delete("view")
+      else usp.set("view", next.view)
+    }
+    const query = usp.toString()
+    router.replace(query ? `${pathname}?${query}#day-panel` : `${pathname}#day-panel`, {
+      scroll: false,
+    })
+    window.requestAnimationFrame(() => {
+      document.getElementById("day-panel")?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      })
+    })
+  }
 
   return (
     <section>
@@ -62,7 +97,7 @@ export function ShortcutCalendar({
               key={key}
               size="sm"
               variant={filter === key ? "default" : "outline"}
-              onClick={() => setFilter(key)}
+              onClick={() => go({ view: key })}
             >
               {key === "all" ? "All days" : actionMeta[key].label}
             </Button>
@@ -95,18 +130,23 @@ export function ShortcutCalendar({
         ))}
         {calendar.map((day) => {
           const flags = dayFlags(day)
-          const hidden =
-            filter !== "all" && !flags.includes(filter)
-          const isSelected = day.date === selected
+          const hidden = filter !== "all" && !flags.includes(filter)
+          const isSelected = day.date === selectedDay.date
           const isToday = day.date === today
+          const href = `${pathname}?day=${day.date}${filter !== "all" ? `&view=${filter}` : ""}#day-panel`
           return (
-            <button
+            <Link
               key={day.date}
-              type="button"
-              onClick={() => setSelected(day.date)}
+              href={href}
+              scroll={false}
+              onClick={(event) => {
+                event.preventDefault()
+                go({ day: day.date })
+              }}
+              aria-current={isSelected ? "date" : undefined}
               className={cn(
-                "min-h-16 rounded-lg border bg-card p-1.5 text-left transition-colors md:min-h-20 md:p-2",
-                isSelected && "border-foreground ring-1 ring-foreground/20",
+                "block min-h-16 cursor-pointer rounded-lg border bg-card p-1.5 text-left no-underline transition-colors md:min-h-20 md:p-2",
+                isSelected && "border-foreground bg-secondary ring-1 ring-foreground/20",
                 isToday && !isSelected && "border-teal",
                 hidden && "opacity-35"
               )}
@@ -140,12 +180,12 @@ export function ShortcutCalendar({
                   {day.theme}
                 </p>
               ) : null}
-            </button>
+            </Link>
           )
         })}
       </div>
 
-      <Card className="mt-5">
+      <Card id="day-panel" key={selectedDay.date} className="mt-5 scroll-mt-24">
         <CardHeader className="border-b">
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-[11px] tracking-[0.16em] text-muted-foreground uppercase">
