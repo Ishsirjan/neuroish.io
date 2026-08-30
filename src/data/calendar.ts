@@ -47,7 +47,7 @@ export const calendar: CalendarDay[] = [
         id: "d01-li",
         channel: "linkedin",
         kind: "post",
-        title: "LinkedIn: papers, projects, three BioIsh rooms",
+        title: "LinkedIn: the methods line that is not a method",
         minutes: 25,
         scriptId: "li-launch",
       },

@@ -81,7 +81,7 @@ export const frequencyWhy = [
       "2026 creator reports (van der Blom-class): 2–4 posts/week is the sweet spot. Daily posting drops reach per post ~26% and fatigues the audience. First 60–90 minutes of comments decide distribution. Topic authority: 80% of posts on 2–3 themes. One link in the body still often hurts reach — put the PDF behind a comment.",
     yourJob:
       "You already have ~20k followers. That is distribution, not discovery. Themes you own: (1) how to read an imaging paper, (2) leakage and pipelines, (3) MRI vs PET vs blood. Reply for 20 minutes after you post. Comment on five neuroimaging posts before you publish.",
-    kill: "Pasting the Instagram caption. Announcing Chardi Kala here. A hashtag wall. A ‘delighted to share’ opener.",
+    kill: "Pasting the Instagram caption. Announcing that you ‘are starting a show’. Leading with your job title — the headline already did that. A hashtag wall. ‘Delighted to share’.",
   },
   {
     channel: "YouTube",
@@ -119,6 +119,7 @@ export const scriptCraft = {
     "They named a method without a number a stranger can hold. ‘PET’s share climbs’ is fog. ‘41% → 67% from healthy to Alzheimer’s, 327 people’ is a Reel.",
     "They stacked four ideas. A 40-second Reel holds one claim and one bruise.",
     "They ended on a brand line. The algorithm pays you for a comment. The word is the CTA.",
+    "The first LinkedIn draft announced a studio and a job title. Peers do not do that. They start on a sentence that annoyed them in a paper.",
   ],
   formula: [
     "0–3s — a sentence you would say in a corridor. No name. No ‘today I want to talk’.",
