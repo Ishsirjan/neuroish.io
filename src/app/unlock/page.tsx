@@ -18,7 +18,7 @@ export default function UnlockPage() {
             neuroish.io — a separate site from the portfolio. Only this door
             is public. Calendar and scripts stay behind the password.
           </p>
-          <UnlockForm />
+          <UnlockForm stay />
         </CardContent>
       </Card>
     </div>
