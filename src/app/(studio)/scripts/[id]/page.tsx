@@ -17,6 +17,9 @@ function spokenText(id: string) {
       ...section.lines,
     ]),
     script.close,
+    script.commentAsk
+      ? `Write ${script.commentAsk} in the comments. I will send you the paper.`
+      : "",
     script.caption,
   ]
   return parts.filter(Boolean).join("\n\n")
@@ -123,6 +126,25 @@ export default async function ScriptPage({
           </section>
         ))}
       </div>
+
+      {script.commentAsk ? (
+        <Card className="mt-8 border-teal/30 bg-teal-soft">
+          <CardHeader>
+            <p className="text-[11px] tracking-[0.16em] text-teal uppercase">
+              Last line · comment hook
+            </p>
+            <CardTitle className="font-heading text-2xl">
+              Write {script.commentAsk} in the comments.
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm leading-relaxed">
+            Say it to camera. Put it last in the caption. When they write{" "}
+            <span className="font-medium text-foreground">{script.commentAsk}</span>,
+            you DM the PDF. One word. No link in the caption — the ask is the
+            engine.
+          </CardContent>
+        </Card>
+      ) : null}
 
       <section className="mt-8">
         <h2 className="font-heading text-2xl">Close</h2>

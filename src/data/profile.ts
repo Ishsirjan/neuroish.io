@@ -51,6 +51,7 @@ export const profile = {
     "Do not leak unpublished CNRS / Kremer-lab results. Speak in public methods and published science.",
     "French lab life is texture, not the brand. The brand is clear science and honest Sikhi.",
     "You already know how to hold a room. Record standing. One idea per reel.",
+    "Reels are stories, not abstracts. Last spoken line is always: write ONE WORD in the comments, I will send you the paper. No PDF in the caption.",
   ],
   positioning: {
     bioish:

@@ -46,6 +46,7 @@ export interface Script {
   sections: ScriptSection[]
   close: string
   caption: string
+  commentAsk?: string
   hashtags: string[]
   sources?: { label: string; url?: string }[]
   clips?: { label: string; timestamp: string }[]

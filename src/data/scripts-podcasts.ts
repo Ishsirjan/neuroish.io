@@ -55,10 +55,11 @@ export const podcastScripts: Script[] = [
         ],
       },
     ],
+    commentAsk: "MRI",
     close:
-      "“I am Ishsirjan. This was the layman room. Paper room next. If you only remember one line: a brain picture is a negotiation with water. Come argue with me. That is the point.”",
+      "“I am Ishsirjan. This was the layman room. If you want the one-page I use with students, write MRI in the comments. I will send it. Paper room next.”",
     caption:
-      "BioIsh, layman room: your MRI is not a photograph. Voxels, T1 versus T2, and why ‘AI detected Alzheimer’s’ is usually a missing methods section.\n\nI am Ish. https://ishsirjan.github.io",
+      "BioIsh, layman room: your MRI is not a photograph.\n\nWrite MRI in the comments. I will send you the paper I start people on.",
     hashtags: ["#BioIsh", "#MRI", "#neuroscience", "#explainerscience", "#neuroimaging"],
     sources: [
       { label: "Any first-year MRI physics lecture you trust — Bloch, contrast, voxels" },
@@ -133,10 +134,11 @@ export const podcastScripts: Script[] = [
         ],
       },
     ],
+    commentAsk: "PAPER",
     close:
-      "“I am Ishsirjan. This was the paper room. Next BioIsh is an expert in the chair — a conversation, not a second lecture. The paper is on medRxiv: Evaluation of Precuneus and Fusiform Gyrus-Based Radiomic biomarkers for Alzheimer's disease Classification and Progression. Come argue with me. That is the point.”",
+      "“I am Ishsirjan. This was the paper room. Next BioIsh is an expert in the chair. If you want the PDF, write PAPER in the YouTube comments. I will send it. Come argue with me. That is the point.”",
     caption:
-      "BioIsh, paper room: I read my radiomics paper on the precuneus and fusiform gyrus — 382 people, four time points, FreeSurfer features, random forests, and the bruises on our own accuracy numbers.",
+      "BioIsh, paper room: I read my radiomics paper on the precuneus and fusiform gyrus — 382 people, four time points, the bruises on our own accuracy.\n\nWrite PAPER in the comments. I will send you the paper.",
     hashtags: [
       "#BioIsh",
       "#neuroscience",
@@ -416,10 +418,11 @@ export const podcastScripts: Script[] = [
         ],
       },
     ],
+    commentAsk: "TRUST",
     close:
-      "“I am Ishsirjan. This was the expert room. If you want to sit in that chair, the ask is simple: you have to be willing to bruise a number in public. BioIsh will be back with a topic you can say at dinner.”",
+      "“I am Ishsirjan. This was the expert room. Write TRUST in the comments if you want the papers we named. I will send them.”",
     caption:
-      "BioIsh, expert room: how do you trust an imaging paper? A conversation, not a lecture.\n\nI am Ish. https://ishsirjan.github.io",
+      "BioIsh, expert room: how do you trust an imaging paper?\n\nWrite TRUST in the comments. I will send you the papers we named.",
     hashtags: ["#BioIsh", "#neuroimaging", "#journalclub", "#OpenScience", "#methods"],
     clips: [
       { label: "I did not invite you here to agree with me", timestamp: "0:30" },
