@@ -20,10 +20,10 @@ const instrument = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "NeuroIsh.fr",
-    template: "%s · NeuroIsh.fr",
+    default: "NeuroIsh.io",
+    template: "%s · NeuroIsh.io",
   },
-  description: "Password-locked NeuroIsh.fr studio. Not indexed.",
+  description: "Password-locked NeuroIsh.io studio. Not indexed.",
   robots: { index: false, follow: false, nocache: true, noarchive: true },
 }
 

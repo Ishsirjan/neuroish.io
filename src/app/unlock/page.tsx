@@ -7,7 +7,7 @@ export default function UnlockPage() {
       <Card className="w-full max-w-md">
         <CardHeader>
           <p className="text-[11px] tracking-[0.18em] text-teal uppercase">
-            NeuroIsh.fr
+            NeuroIsh.io
           </p>
           <CardTitle className="font-heading text-3xl">
             This studio is locked.
@@ -15,7 +15,7 @@ export default function UnlockPage() {
         </CardHeader>
         <CardContent>
           <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
-            neuroish.fr — a separate site from the portfolio. Only this door
+            neuroish.io — a separate site from the portfolio. Only this door
             is public. Calendar and scripts stay behind the password.
           </p>
           <UnlockForm />

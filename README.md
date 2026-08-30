@@ -1,20 +1,18 @@
-# neuroish.fr
+# neuroish.io
 
-Password-locked studio for **NeuroIsh.fr** — calendar, scripts, outreach.
+Password-locked studio for **NeuroIsh.io** — calendar, scripts, outreach.
 
 This is a **separate** GitHub Pages project. It does not replace [ishsirjan.github.io](https://ishsirjan.github.io) (the portfolio).
 
-## GitHub repo name
+## GitHub repo
 
-[`Ishsirjan/Neuroish.fr`](https://github.com/Ishsirjan/Neuroish.fr) (public is fine — the site still asks for a password)
+[`Ishsirjan/neuroish.io`](https://github.com/Ishsirjan/neuroish.io)
 
 Website:
 
-**https://ishsirjan.github.io/Neuroish.fr/**
+**https://ishsirjan.github.io/neuroish.io/**
 
-In the repo: **Settings → Pages → Source: GitHub Actions**.
-
-Do not name it `ishsirjan.github.io`.
+Instagram stays **@neuroish.fr**. The studio site is **neuroish.io**.
 
 Password: `ish-private`
 
