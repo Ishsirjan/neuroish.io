@@ -143,9 +143,9 @@ export const podcastScripts: Script[] = [
       },
     ],
     close:
-      "“If you came for a TED talk that says ‘Sikhi predicted fMRI’, this is not that show. If you came to think more carefully about the ‘I’ that follows you into the scanner and into the diwan hall, stay. Episode two is seva and the social brain. I am Ishsirjan. Chardi kala.”",
+      "“If you came for a TED talk that says ‘Sikhi predicted fMRI’, this is not that show. If you came to think more carefully about the ‘I’ that follows you into the scanner and into the diwan hall, stay. Episode two is seva and the social brain. I am Ish. ishsirjan.github.io. Chardi kala.”",
     caption:
-      "Chardi Kala 1: haumai is not self-esteem, and the default mode network is not a soul. I hold them next to each other as a Sikh who builds neuroimaging pipelines — and I refuse the cheap merge.",
+      "Chardi Kala 1: haumai is not self-esteem, and the default mode network is not a soul. I hold them next to each other as a Sikh who builds neuroimaging pipelines — and I refuse the cheap merge.\n\nI am Ish. https://ishsirjan.github.io",
     hashtags: ["#ChardiKala", "#Sikhi", "#Gurbani", "#neuroscience", "#attention", "#MentalHealth"],
     sources: [
       { label: "Raichle, The Brain's Default Mode Network (Annual Review of Neuroscience)" },
@@ -275,9 +275,9 @@ export const podcastScripts: Script[] = [
       },
     ],
     close:
-      "“I am Ishsirjan. Two shows, one month, four episodes. If you have a paper you want translated into human, or a shabad you want sat next to a method, write to me. October we bring other voices into the room. Until then — keep the pot on.”",
+      "“Two shows, one month, four episodes. If you have a paper you want translated into human, or a shabad you want sat next to a method, write to me. October we bring other voices into the room. Until then — keep the pot on. I am Ish. ishsirjan.github.io.”",
     caption:
-      "Chardi Kala 2: seva is not volunteering hours, langar is not branding, and the social brain is allowed to have a modest opinion — nothing more.",
+      "Chardi Kala 2: seva is not volunteering hours, langar is not branding, and the social brain is allowed to have a modest opinion — nothing more.\n\nI am Ish. https://ishsirjan.github.io",
     hashtags: ["#ChardiKala", "#Sikhi", "#Seva", "#Langar", "#Sangat", "#MentalHealth"],
     sources: [
       { label: "Haslam et al., The New Psychology of Health / social cure" },
