@@ -31,10 +31,10 @@ export const reelScripts: Script[] = [
   },
   {
     id: "reel-radiomics",
-    kind: "explainer",
+    kind: "paper",
     channel: "instagram",
     title: "What radiomics actually is",
-    subtitle: "Science explainer. No paper yet.",
+    subtitle: "Paper method, 40 seconds. Attractive, not cute.",
     duration: "40s",
     whyYou: "You used radiomics as a method, not a buzzword. Teach the word before you teach your paper.",
     scrollStop: "Radiomics is not AI 'vibing' at your MRI.",
@@ -146,7 +146,7 @@ export const reelScripts: Script[] = [
   },
   {
     id: "reel-40hz",
-    kind: "news",
+    kind: "paper",
     channel: "instagram",
     title: "40 Hz light-and-sound, now with a BCI",
     subtitle: "NCT07618481 — recruiting 2026, Ruijin Hospital.",
@@ -203,7 +203,7 @@ export const reelScripts: Script[] = [
   },
   {
     id: "reel-glymphatic",
-    kind: "news",
+    kind: "paper",
     channel: "instagram",
     title: "Sleep takes the trash out — 2026 human data",
     subtitle: "Glymphatic clearance, Nature Communications-reported trial, Jan 2026.",
@@ -264,7 +264,7 @@ export const reelScripts: Script[] = [
   },
   {
     id: "reel-leakage",
-    kind: "explainer",
+    kind: "project",
     channel: "instagram",
     title: "Data leakage — the silent career-ender",
     subtitle: "Tied to Leakage_Audit. Essential bioinformatics teaching.",
@@ -353,6 +353,63 @@ export const reelScripts: Script[] = [
     hashtags: ["#AIDOC", "#MedML", "#explainableAI", "#buildinpublic"],
   },
   {
+    id: "reel-plasma-ad",
+    kind: "paper",
+    channel: "instagram",
+    title: "Paper in 60s — a blood test that smells Alzheimer's",
+    subtitle: "p-tau217 and friends, said so a non-specialist stays. Attractive, not cute.",
+    duration: "50s",
+    whyYou: "You work MRI-first. You can explain why blood is exciting without pretending the scanner is obsolete.",
+    scrollStop: "What if the first Alzheimer’s test was a vial, not a tube?",
+    hook: "A lumbar puncture is a story. An MRI is a waitlist. A blood test that tracks phosphorylated tau is a different argument — if the paper earned it.",
+    onScreen: ["Not a miracle vial", "p-tau217", "Cheaper than PET", "Still not a personality"],
+    sections: [
+      {
+        heading: "Spoken",
+        lines: [
+          "People want Alzheimer’s to show up in a blood draw. I want that too. I also want the methods.",
+          "The papers you will see this year keep pointing at plasma p-tau217: a fragment the brain sheds, that blood can carry.",
+          "When the study is good, it tracks amyloid PET surprisingly well. When it is sloppy, it tracks who could afford the clinic.",
+          "A vial does not replace a neurologist. It might decide who gets the expensive scan sooner.",
+          "Ask two things before you share the headline: which assay, and which people were never in the training story.",
+        ],
+      },
+    ],
+    close: "Hold the two questions on screen.",
+    caption:
+      "What if the first Alzheimer’s test was a vial, not a tube?\n\nPlasma p-tau217 is the sentence in the papers. Not a miracle. A triage tool — if the cohort is honest.\n\nI am Ish. https://ishsirjan.github.io",
+    hashtags: ["#Alzheimers", "#biomarkers", "#pTau217", "#neuroimaging", "#NeuroIsh"],
+    sources: [{ label: "p-tau217 plasma literature — cite the specific paper you filmed from that week" }],
+  },
+  {
+    id: "reel-brain-fm",
+    kind: "paper",
+    channel: "instagram",
+    title: "Paper in 60s — a foundation model met a brain MRI",
+    subtitle: "Latest ‘one model, many tasks’ imaging paper, kept human.",
+    duration: "50s",
+    whyYou: "You can puncture foundation-model hype without sounding like a Luddite. That is rare on this app.",
+    scrollStop: "A model that has seen every brain has not understood yours.",
+    hook: "Foundation models in MRI sound like one brain to rule them all. The paper is usually: pretrain on a pile, fine-tune on a smaller honest set, then hope the pile was not a mess.",
+    onScreen: ["Not one brain to rule", "Pretrain · then fine-tune", "Site effects still win", "Ask what it never saw"],
+    sections: [
+      {
+        heading: "Spoken",
+        lines: [
+          "A foundation model is a student who read the whole library, then sat your exam.",
+          "In brain MRI that library is thousands of scans from many scanners. That is power. It is also every site effect in a trench coat.",
+          "The useful papers tell you what the model failed on: a new field strength, a new hospital, a new age band.",
+          "If they only report the exam they wrote themselves, that is a talent show.",
+          "I still want these models. I want them with a bruise. Save this before you share the demo.",
+        ],
+      },
+    ],
+    close: "Cut on ‘bruise’.",
+    caption:
+      "A model that has seen every brain has not understood yours.\n\nFoundation MRI models: pretrain on a pile, fine-tune on something honest, show the hospital they never visited.\n\nI am Ish. https://ishsirjan.github.io",
+    hashtags: ["#FoundationModels", "#MRI", "#neuroimaging", "#MachineLearning", "#NeuroIsh"],
+  },
+  {
     id: "reel-month-close",
     kind: "explainer",
     channel: "instagram",
@@ -362,12 +419,12 @@ export const reelScripts: Script[] = [
     whyYou: "Accountability on camera trains you more than a Notion dashboard.",
     scrollStop: "I promised a scientist's cadence. Here is whether I lied.",
     hook: "Three reels a week. Two podcasts a month. A CNRS job that still had to get done. Did the machine run?",
-    onScreen: ["4 episodes", "13 reels", "Still employed", "October: your paper?"],
+    onScreen: ["3 BioIsh rooms", "8 papers · 4 projects", "Still employed", "October: your paper?"],
     sections: [
       {
         heading: "Spoken",
         lines: [
-          "Month one, closed. Two BioIsh. Two Chardi Kala. A neuroscience grid that did not eat my lab.",
+          "Month one, closed. Three BioIsh rooms. Papers and projects on the grid. Sikhi on its own feed.",
           "What worked: Wednesday night batches. What failed: I will say the true thing on camera, not a brand thing.",
           "What I will not do in October: daily reels, or waiting on a guest until the episode vanishes.",
           "DM a paper you want in sixty seconds. If it is good, it goes on the grid. If it is hype, I will say that too.",

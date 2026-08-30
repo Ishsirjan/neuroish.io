@@ -1,7 +1,7 @@
 import type { OutreachTarget } from "./types"
 
 export const outreachPlaybook = {
-  rule: "Three new notes a week. Thursday is follow-up day. September books October. No guest is required to ship an episode.",
+  rule: "Three neuroscience notes a week. Sikhi notes on Saturday, never in the same send. Thursday is follow-up day. The expert episode is the only one that waits on a person.",
   voice: "Short, specific, one ask, one sentence of why them, one sentence of why you. No ‘I hope this finds you well’.",
   followUpDays: 7,
 }
@@ -16,24 +16,22 @@ export const outreachTargets: OutreachTarget[] = [
     week: 1,
     date: "2026-09-01",
     show: "platform",
-    subject: "Submit BioIsh + Chardi Kala RSS",
-    body: `I am submitting two separate shows, not one feed.
+    subject: "Submit BioIsh RSS (science). Chardi Kala is a separate ticket.",
+    body: `Two separate shows. Two tickets. Do not share a feed.
 
-Show A — BioIsh
+Show A — BioIsh (submit today)
 Category: Science / Life sciences
 Language: English
 Host: Ishsirjan Kaur Chandok, neuroimaging engineer, IGMM–CNRS
-Cadence: fortnightly Tuesdays
-Launch episode: 8 September 2026
+Cadence: 3 episodes / month — layman topic, paper reading, expert conversation
+Launch episode: 8 September 2026 (layman room)
 Site: https://ishsirjan.github.io
 
-Show B — Chardi Kala
-Category: Religion & Spirituality / Society
+Show B — Chardi Kala (separate submission, later this month)
+Category: Religion & Spirituality
 Language: English (Punjabi lines inside)
-Cadence: the other Tuesdays
-Launch episode: 15 September 2026
-
-Cover art: two distinct squares. Do not reuse a brain for the Sikhi show.`,
+Cadence: 1 episode every 1–2 months
+Do not reuse BioIsh cover art. Do not mention BioIsh in the Sikhi show description.`,
     followUp: "If a host is still ‘in review’ on 6 Sep, publish YouTube first and treat RSS as a follow-on. Do not slip the date.",
   },
   {
@@ -45,21 +43,23 @@ Cover art: two distinct squares. Do not reuse a brain for the Sikhi show.`,
     week: 1,
     date: "2026-09-01",
     show: "bioish",
-    subject: "BioIsh — 20 minutes in October on training computational people",
+    subject: "BioIsh expert room — 25 minutes on 20 September",
     body: `Rahul,
 
-I have started BioIsh, a fortnightly methods podcast. Episode 1 (8 Sep) is our precuneus / fusiform radiomics paper. I will be unkind to our own training accuracies in the right way.
+I have started BioIsh: three neuroscience episodes a month. A layman topic, a paper read slowly, then a conversation with an expert.
 
-I am not asking you onto episode 1. I am asking for a 20-minute October conversation on how you train people to not leak data and not worship AUCs.
+8 Sep is dinner-table MRI. 15 Sep is our radiomics paper — I will be unkind to our own training accuracies.
 
-Two windows: Tue 6 Oct or Thu 8 Oct, 16:30–17:00 IST, remote. I will send three questions in advance. You can veto any of them.
+I am asking you into the expert chair on Sunday 20 September, 30 minutes remote. How do you trust an imaging paper. What do you do with a 0.97 AUC. Where would you have made me rewrite.
 
-If the answer is no, I will still send you the episode. I learned the habit in your orbit.
+I will send the questions 48 hours ahead. You can veto any of them.
+
+If that Sunday is impossible, give me one other hour that week. I will move the publish date before I invent a solo replacement.
 
 Ishsirjan
 IGMM–CNRS, Montpellier`,
     followUp:
-      "If no reply by 8 Sep, LinkedIn DM with the live episode link and one line: “Still holding 6 or 8 Oct if useful.”",
+      "If no reply by 8 Sep, LinkedIn DM with the layman URL and one line: “Still holding 20 Sep if useful.”",
   },
   {
     id: "out-sikhri",
@@ -70,23 +70,23 @@ IGMM–CNRS, Montpellier`,
     week: 1,
     date: "2026-09-01",
     show: "chardi-kala",
-    subject: "A methods-minded Sikhi podcast — looking for a conversation, not a blessing",
+    subject: "A slow Sikhi podcast — looking for a conversation, not a blessing",
     body: `Hello,
 
-My name is Ishsirjan Kaur Chandok. I am a Sikh neuroimaging engineer at CNRS in Montpellier. I am launching Chardi Kala, a fortnightly podcast that sits a Sikh idea next to a scientific one and refuses the cheap merge.
+My name is Ishsirjan Kaur Chandok. I am a Sikh neuroimaging engineer at CNRS in Montpellier. I am starting Chardi Kala, a Sikhi podcast on its own feed — one episode every one to two months. It is not a neuroscience show and it will not be clipped onto my science Instagram.
 
-Episode 1 (15 Sep, solo) is haumai and attention. Episode 2 is seva and the social brain. I am not a religious studies scholar. I am trying to be a careful practitioner with a microphone.
+Episode 1 (late September, solo) is haumai and attention. I am not a religious studies scholar. I am trying to be a careful practitioner with a microphone.
 
 I am writing to ask two things:
-1. If a researcher or educator in your circle likes hard questions, I would like to book 25 minutes in October.
+1. If a researcher or educator in your circle likes hard questions, I would like to book 25 minutes later this autumn.
 2. If this is not a fit, a one-line redirect is a gift.
 
-I will not ask you to promote a show you have not heard. The first episode will be on the internet on 15 Sep.
+I will not ask you to promote a show you have not heard.
 
 Waheguru ji ka khalsa, waheguru ji ki fateh.
 Ishsirjan
 https://ishsirjan.github.io`,
-    followUp: "On 16 Sep, send the live URL. One paragraph. No guilt.",
+    followUp: "After 27 Sep, send the live URL. One paragraph. No guilt. Do not attach a BioIsh link.",
   },
   {
     id: "out-transmitter",
@@ -192,7 +192,7 @@ Ish`,
 
 I heard your contribution at the UC Riverside Sikh Studies conversation on Gurmat and neuroscience. I am a Sikh neuroimaging engineer (IGMM–CNRS) launching a small podcast, Chardi Kala, that refuses to reduce Gurbani to a network.
 
-Episode 1 (15 Sep, solo) is haumai and rumination. I would be grateful for 25 minutes in late October on how you hold psychiatry and Sikhi in the same clinic without costume-changing.
+Episode 1 (late September, solo) is haumai and rumination. I would be grateful for 25 minutes later this autumn on how you hold psychiatry and Sikhi in the same clinic without costume-changing.
 
 I can work around clinic hours. I will send questions in advance. You may kill any of them.
 
@@ -251,12 +251,12 @@ Ishsirjan`,
 
 I am Ishsirjan Kaur. I work on neuroimaging in France and I have started Chardi Kala, a podcast where I sit with one Sikh idea at a time. I am not here to ‘prove’ Sikhi with neuroscience.
 
-Episode 1 goes up 15 September (haumai). I would like to record a later episode on how you teach young people to keep seva from becoming content.
+Episode 1 goes up late September (haumai). I would like to record a later episode on how you teach young people to keep seva from becoming content.
 
 If this is the wrong inbox, please point me to the right one.
 
 Ishsirjan`,
-    followUp: "Send the live episode on 16 Sep. Stop after one follow-up.",
+    followUp: "Send the live episode after 27 Sep. Stop after one follow-up.",
   },
   {
     id: "out-khalsa-diary",
@@ -532,7 +532,7 @@ IGMM–CNRS`,
     id: "out-october-slate",
     name: "October slate (you, 30 Sep)",
     role: "Planning",
-    why: "The month is only finished when the next four episode slots have a name or a solo title.",
+    why: "The month is only finished when October has three BioIsh rooms and a Sikhi hold — not four mixed episodes.",
     channel: "email",
     week: 4,
     date: "2026-09-30",
@@ -540,12 +540,14 @@ IGMM–CNRS`,
     subject: "Lock October",
     body: `Write this to yourself and put it on the calendar:
 
-BioIsh — 6 Oct: guest or solo “How I would redo our AD paper”
-BioIsh — 20 Oct: guest or solo “Site effects”
-Chardi Kala — 13 Oct: guest or solo “Kaur in a French lab”
-Chardi Kala — 27 Oct: guest or solo “Hukam and failed experiments”
+BioIsh layman — early Oct: a topic you can say at dinner
+BioIsh paper — mid Oct: one paper, read slowly
+BioIsh expert — late Oct: a named person or a moved date
+Chardi Kala — hold for late Oct or November. Do not force a second Sikhi episode to keep a grid full.
 
-If a guest is a maybe, it is a no. File the solo script on 30 Sep before you go to sleep.`,
+Instagram: 2 paper reels + 1 project reel, every week. No crossover captions.
+
+If a guest is a maybe, it is a no. File the layman script on 30 Sep before you go to sleep.`,
     followUp: "There is no follow-up. There is a calendar.",
   },
 ]

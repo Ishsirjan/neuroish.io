@@ -2,7 +2,7 @@ export const profile = {
   name: "Ishsirjan Kaur Chandok",
   firstName: "Ishsirjan",
   tagline:
-    "Neuroimaging engineer who already hosts BioIsh, already posts as @neuroish.fr, and is now turning that into a real two-show studio.",
+    "Neuroimaging engineer who already hosts BioIsh and already posts as @neuroish.fr. Neuroscience and Sikhi stay in different rooms.",
   location: "Montpellier, France · IGMM–CNRS, Eric Kremer Lab",
   site: "https://ishsirjan.github.io",
   instagram: "@neuroish.fr",
@@ -31,7 +31,7 @@ export const profile = {
     {
       label: "Audience you already have",
       value:
-        "About 20,000 LinkedIn followers. That is your highest-leverage channel in month one. Instagram and the two podcasts are the long game.",
+        "About 20,000 LinkedIn followers. That is the science distribution channel. Instagram is papers and projects. Sikhi has its own, slower podcast — not this feed.",
     },
     {
       label: "Science you can teach from the inside",
@@ -54,16 +54,16 @@ export const profile = {
   ],
   positioning: {
     bioish:
-      "BioIsh — a 25–35 minute solo neuroscience show. You explain one paper, one method, or one project the way you would to a sharp undergrad who stayed after journal club.",
+      "BioIsh — three neuroscience episodes a month, three jobs: a layman topic, a paper read slowly, and a conversation with an expert. Never a Sikhi crossover episode.",
     chardiKala:
-      "Chardi Kala — a 20–30 minute Sikhi show. Lived inquiry: haumai and attention, seva and the social brain, women in the lab and in the sangat, hukam and uncertainty in research. Punjabi welcome. No gurdwara-replacement energy.",
+      "Chardi Kala — one Sikhi episode every one to two months. Lived inquiry. Own feed, own art, own Sunday. Punjabi welcome. No gurdwara-replacement energy, and no neuroscience trailer.",
     social:
-      "NeuroIsh — Instagram, Facebook, YouTube Shorts, and LinkedIn. Neuroscience only on the visual platforms. Sikhi lives on the second podcast plus stories, not on the neuroscience grid.",
+      "NeuroIsh — Instagram, Facebook, YouTube Shorts, LinkedIn. Two paper reels and one project reel a week. Latest papers, short and attractive. Sikhi does not appear on this grid.",
   },
   constraints: [
     "Full-time CNRS engineer. Content gets a Sunday block plus two weeknights. That is it.",
-    "Month one is solo. Guests are booked now for October. Do not stall episode one waiting for a yes.",
-    "French, Indian, and Sikh audiences overlap but do not want the same post. Cross-post visuals. Rewrite LinkedIn.",
+    "Layman and paper episodes ship solo. The expert episode is the only one that waits on a person — and it has a move-the-date rule, not a skip-the-format rule.",
+    "Neuroscience and Sikhi audiences may overlap in your life. They do not overlap in the posts. Separate feeds. Separate asks.",
     "Medical claims stay cautious. You are an engineer and a student of the literature, not a clinician.",
   ],
 }
@@ -74,29 +74,29 @@ export const shows = [
     name: "BioIsh",
     kind: "Neuroscience podcast",
     length: "25–35 min",
-    cadence: "Every other Tuesday",
+    cadence: "3 / month: layman · paper · expert",
     color: "teal",
     promise:
-      "One idea, explained from the inside: papers, pipelines, neurotech, and the bioinformatics underneath imaging.",
+      "A neuroscience curriculum: one topic in human language, one paper read in detail, one expert in the room.",
   },
   {
     id: "chardi-kala",
     name: "Chardi Kala",
     kind: "Sikhi podcast",
     length: "20–30 min",
-    cadence: "The other Tuesdays",
+    cadence: "1 episode / 1–2 months",
     color: "saffron",
     promise:
-      "Khoj in public. Sikhi as a living practice of attention, seva, and courage — in conversation with, never reduced to, science.",
+      "Khoj in public. Own feed. Not a neuroscience series, not a clip on the paper grid.",
   },
   {
     id: "neuroish",
     name: "NeuroIsh",
     kind: "Instagram · Facebook · YouTube · LinkedIn",
     length: "30–60s reels · 150–220 word posts",
-    cadence: "3 reels / week · 2 LinkedIn / week",
+    cadence: "2 papers + 1 project / week",
     color: "ink",
     promise:
-      "The same mind, shorter. Science explainers, paper cards, project walkthroughs, and news you can trust.",
+      "Latest papers, short and attractive. One project a week from work you can defend. Neuroscience only.",
   },
 ]

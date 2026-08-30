@@ -2,11 +2,79 @@ import type { Script } from "./types"
 
 export const podcastScripts: Script[] = [
   {
+    id: "pod-bioish-layman",
+    kind: "podcast",
+    channel: "bioish",
+    title: "BioIsh — Layman room: Your MRI is not a photograph",
+    subtitle: "What a brain scan is actually doing, in the language you would use at dinner. No paper, no guest, no Sikhi.",
+    duration: "26–30 min",
+    whyYou:
+      "You sit in a CNRS imaging lab. Most of your audience has only been inside an MRI as a patient. This episode earns the right to do papers later.",
+    scrollStop: "That picture of your brain is a negotiation, not a photograph.",
+    hook: "If an MRI were a photograph, radiology would be a weekend hobby. It is not. It is a set of arguments the scanner has with water, time, and a very bored proton.",
+    sections: [
+      {
+        heading: "Cold open (0:00–1:20)",
+        duration: "1 min",
+        lines: [
+          "Record standing. No music. Do not start with CNRS.",
+          "“That picture of your brain is a negotiation, not a photograph.”",
+          "“I am Ish. I build neuroimaging pipelines in Montpellier. Today I will not read a paper. I will tell you what the machine is actually doing, in language you can repeat to a parent.”",
+          "“This is BioIsh, layman room. Later this month I read a paper slowly, then I talk to an expert. Three different jobs. Today is the dinner table.”",
+        ],
+      },
+      {
+        heading: "A tube, a magnet, a story (1:20–9:00)",
+        duration: "8 min",
+        lines: [
+          "An MRI is a strong magnet plus radio waves plus a computer that is guessing in public. Hydrogen in water is the actor. Fat and fluid behave differently. That is contrast, not ‘the camera liked this angle’.",
+          "T1, T2, FLAIR — give each one a household job. T1: who lives where, the anatomy map. T2: who is swollen or wet. FLAIR: the same argument with the cerebrospinal fluid told to sit down.",
+          "A voxel is a sugar-cube of space. Nothing in that cube is a single neuron. If you remember one insult to hype, remember that.",
+          "Motion is not a vibe. A swallow can smear a gyrus. That is why a beautiful model on a dirty T1 is a press release — we will say that sentence again on a paper day, not today.",
+        ],
+      },
+      {
+        heading: "What ‘AI saw Alzheimer’s’ usually means (9:00–18:00)",
+        duration: "9 min",
+        lines: [
+          "A headline compresses a pipeline: people, scanner, labels, split, model, a number. If any of those is missing, you do not have news. You have marketing.",
+          "Labels are made by humans who disagree. The model learns the disagreement too.",
+          "If the same person is in training and in the test, the model is recognising a family member, not a disease.",
+          "PET is a different argument — a tracer, a wait, a cost. MRI is the scan most of the world can actually get. That is why I care about MRI-first work. It is not because PET is fake.",
+          "Give them three questions to keep: Which scan. Which people. Which data the model never saw.",
+        ],
+      },
+      {
+        heading: "What I want you to do with this (18:00–25:00)",
+        duration: "7 min",
+        lines: [
+          "If you are a student: learn what a NIfTI is before you learn PyTorch.",
+          "If you are a family member: a pretty overlay is not a diagnosis. Ask what was measured.",
+          "If you make content: do not say ‘the AI detected’ unless you can say from what.",
+          "Next BioIsh is the paper room. I will read my own radiomics study and be unkind to it. Then an expert comes in. This show does not mash those three jobs into one episode, and it does not mash science into Sikhi.",
+        ],
+      },
+    ],
+    close:
+      "“I am Ishsirjan. This was the layman room. Paper room next. If you only remember one line: a brain picture is a negotiation with water. Come argue with me. That is the point.”",
+    caption:
+      "BioIsh, layman room: your MRI is not a photograph. Voxels, T1 versus T2, and why ‘AI detected Alzheimer’s’ is usually a missing methods section.\n\nI am Ish. https://ishsirjan.github.io",
+    hashtags: ["#BioIsh", "#MRI", "#neuroscience", "#explainerscience", "#neuroimaging"],
+    sources: [
+      { label: "Any first-year MRI physics lecture you trust — Bloch, contrast, voxels" },
+      { label: "BIDS / NIfTI as the ‘this is a file, not a vibe’ pointer" },
+    ],
+    clips: [
+      { label: "A negotiation, not a photograph", timestamp: "0:00–0:40" },
+      { label: "Three questions for an AI headline", timestamp: "mark in edit" },
+    ],
+  },
+  {
     id: "pod-bioish-1",
     kind: "podcast",
     channel: "bioish",
-    title: "BioIsh 1 — The brain regions that whisper Alzheimer's first",
-    subtitle: "Precuneus, fusiform gyrus, radiomics, and what a 382-person ADNI-style study can and cannot claim.",
+    title: "BioIsh — Paper room: The regions that whisper Alzheimer's first",
+    subtitle: "A slow read of your radiomics paper. Precuneus, fusiform gyrus, 382 people, and the bruises on the accuracy.",
     duration: "28–32 min",
     whyYou:
       "This is your first-author medRxiv work. You extracted nine FreeSurfer radiomic features from precuneus and fusiform gyrus across 0, 6, 12, and 24 months. Nobody else can tell this story from the inside without guessing.",
@@ -20,7 +88,7 @@ export const podcastScripts: Script[] = [
           "Record this standing, no music yet. Do not start with your CV.",
           "“Alzheimer's does not kick the door. It edits two quiet streets in your cortex while the family is still arguing about the keys.”",
           "“I am Ish. I build neuroimaging pipelines in Montpellier, at the Kremer lab at IGMM–CNRS. I trained in bioinformatics at IIT Hyderabad.”",
-          "“This is BioIsh. Anatomy, then method, then the claim, then the bruise on the claim. Today: two regions that whisper first — and a paper with my name on it, so I will be unkind to it in the right places.”",
+          "“This is BioIsh, paper room. Last time I spoke like dinner. Today I read a paper with my name on it, slowly, and I will be unkind to it in the right places.”",
         ],
       },
       {
@@ -66,9 +134,9 @@ export const podcastScripts: Script[] = [
       },
     ],
     close:
-      "“I am Ishsirjan. This was BioIsh episode one. In two weeks I will talk about what it means to turn scans into a system — pipelines, not vibes. If you want the paper, it is on medRxiv: Evaluation of Precuneus and Fusiform Gyrus-Based Radiomic biomarkers for Alzheimer's disease Classification and Progression. Come argue with me. That is the point.”",
+      "“I am Ishsirjan. This was the paper room. Next BioIsh is an expert in the chair — a conversation, not a second lecture. The paper is on medRxiv: Evaluation of Precuneus and Fusiform Gyrus-Based Radiomic biomarkers for Alzheimer's disease Classification and Progression. Come argue with me. That is the point.”",
     caption:
-      "BioIsh 1 is live. I walk through my radiomics paper on the precuneus and fusiform gyrus — 382 people, four time points, FreeSurfer features, random forests, and the bruises on our own accuracy numbers. For students, engineers, and anyone who is tired of ‘AI detects Alzheimer’s’ headlines with no methods.",
+      "BioIsh, paper room: I read my radiomics paper on the precuneus and fusiform gyrus — 382 people, four time points, FreeSurfer features, random forests, and the bruises on our own accuracy numbers.",
     hashtags: [
       "#BioIsh",
       "#neuroscience",
@@ -146,10 +214,10 @@ export const podcastScripts: Script[] = [
       },
     ],
     close:
-      "“If you came for a TED talk that says ‘Sikhi predicted fMRI’, this is not that show. If you came to think more carefully about the ‘I’ that follows you into the scanner and into the diwan hall, stay. Episode two is seva and the social brain. I am Ish. ishsirjan.github.io. Chardi kala.”",
+      "“If you came for a TED talk that says ‘Sikhi predicted fMRI’, this is not that show. If you came to think more carefully about the ‘I’ that follows you into a lab and into the diwan hall, stay. The next Chardi Kala is in a month or two — seva, when it is ready. I am Ish. ishsirjan.github.io. Chardi kala.”",
     caption:
       "Chardi Kala 1: haumai is not self-esteem, and the default mode network is not a soul. I hold them next to each other as a Sikh who builds neuroimaging pipelines — and I refuse the cheap merge.\n\nI am Ish. https://ishsirjan.github.io",
-    hashtags: ["#ChardiKala", "#Sikhi", "#Gurbani", "#neuroscience", "#attention", "#MentalHealth"],
+    hashtags: ["#ChardiKala", "#Sikhi", "#Gurbani", "#haumai", "#attention"],
     sources: [
       { label: "Raichle, The Brain's Default Mode Network (Annual Review of Neuroscience)" },
       { label: "Khalsa Diary, The Architecture of the Mind (2025) — use as a conversation partner, not gospel" },
@@ -236,7 +304,7 @@ export const podcastScripts: Script[] = [
     kind: "podcast",
     channel: "chardi-kala",
     title: "Chardi Kala 2 — Seva, langar, and the social brain",
-    subtitle: "Why selfless work is not a productivity hack, and what social neuroscience is allowed to say about sangat.",
+    subtitle: "October or November — not September. Why selfless work is not a productivity hack.",
     duration: "24–28 min",
     whyYou:
       "You have run seva-shaped rooms: NSS, Project CLAP, Hult Prize, WICCI, student government. You also know oxytocin headlines are usually garbage. This episode needs both instincts.",
@@ -282,7 +350,7 @@ export const podcastScripts: Script[] = [
       },
     ],
     close:
-      "“Two shows, one month, four episodes. If you have a paper you want translated into human, or a shabad you want sat next to a method, write to me. October we bring other voices into the room. Until then — keep the pot on. I am Ish. ishsirjan.github.io.”",
+      "“This show stays slow on purpose. If you have a seva that did not feel good, write to me. I am Ish. ishsirjan.github.io.”",
     caption:
       "Chardi Kala 2: seva is not volunteering hours, langar is not branding, and the social brain is allowed to have a modest opinion — nothing more.\n\nI am Ish. https://ishsirjan.github.io",
     hashtags: ["#ChardiKala", "#Sikhi", "#Seva", "#Langar", "#Sangat", "#MentalHealth"],
@@ -294,6 +362,68 @@ export const podcastScripts: Script[] = [
     clips: [
       { label: "Langar as a technology for dissolving rank", timestamp: "0:15" },
       { label: "Three horsemen of lazy science communication", timestamp: "mark" },
+    ],
+  },
+  {
+    id: "pod-bioish-expert",
+    kind: "podcast",
+    channel: "bioish",
+    title: "BioIsh — Expert room: How do you trust an imaging paper?",
+    subtitle: "A conversation, not a lecture. Guest first: Rahul Kumar. Backup: a methods voice who will argue with you in public.",
+    duration: "28–34 min",
+    whyYou:
+      "The third room this month is another mind. You already know how to hold journal club. This is that, with a mic, and with someone who can tell you that you are wrong.",
+    scrollStop: "I did not invite you here to agree with me.",
+    hook: "A methods podcast that never lets another scientist talk is a monologue with better lighting. Today someone else holds the chalk.",
+    sections: [
+      {
+        heading: "Before you hit record",
+        duration: "0 min",
+        lines: [
+          "Send three questions 48 hours ahead. They may veto any of them.",
+          "Agree the red line: no unpublished CNRS numbers, no student gossip, no ‘quick take’ on a paper they have not read.",
+          "If they cancel after Thursday, move the publish date. Do not fill this slot with another solo paper.",
+        ],
+      },
+      {
+        heading: "Cold open — you, 45 seconds",
+        duration: "1 min",
+        lines: [
+          "“This is BioIsh, expert room. I am Ish. I build neuroimaging pipelines at CNRS.”",
+          "Name the guest in one sentence of why them, not a CV parade.",
+          "“I did not invite you here to agree with me.”",
+        ],
+      },
+      {
+        heading: "Question set (let them run)",
+        duration: "22 min",
+        lines: [
+          "1. When you open an imaging paper, what is the first thing you look for — and what makes you close the tab?",
+          "2. A student brings you an AUC of 0.97. What do you ask before you smile?",
+          "3. Train/test splits: tell a story of leakage you are allowed to tell, without naming the guilty.",
+          "4. MRI versus PET versus blood: what should a clinic trust first in 2026, and what is still theatre?",
+          "5. What did my radiomics paper do honestly, and where would you have made me rewrite?",
+          "6. If you could ban one phrase from science Twitter, what dies?",
+          "Leave two minutes of silence after their best sentence. Do not jump in with your pipeline.",
+        ],
+      },
+      {
+        heading: "Your last minute",
+        duration: "2 min",
+        lines: [
+          "Thank them by name. Repeat one thing they changed in your head.",
+          "Point to next month: another layman, another paper, another expert. Three rooms. No crossover episode.",
+        ],
+      },
+    ],
+    close:
+      "“I am Ishsirjan. This was the expert room. If you want to sit in that chair, the ask is simple: you have to be willing to bruise a number in public. BioIsh will be back with a topic you can say at dinner.”",
+    caption:
+      "BioIsh, expert room: how do you trust an imaging paper? A conversation, not a lecture.\n\nI am Ish. https://ishsirjan.github.io",
+    hashtags: ["#BioIsh", "#neuroimaging", "#journalclub", "#OpenScience", "#methods"],
+    clips: [
+      { label: "I did not invite you here to agree with me", timestamp: "0:30" },
+      { label: "The 0.97 AUC question", timestamp: "mark" },
     ],
   },
 ]
