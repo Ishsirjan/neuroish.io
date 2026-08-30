@@ -11,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { LockButton } from "@/components/lock-button"
 import { StatusProvider, useStatus } from "@/components/status-provider"
 import { allItems } from "@/data/calendar"
 import { outreachTargets } from "@/data/outreach"
@@ -79,7 +80,10 @@ function ShellInner({ children }: { children: React.ReactNode }) {
             </p>
           </Link>
           <div className="hidden md:flex md:flex-col md:items-end md:gap-1">
-            <NavLinks />
+            <div className="flex items-center gap-2">
+              <NavLinks />
+              <LockButton />
+            </div>
             <ProgressHint />
           </div>
           <div className="md:hidden">
@@ -97,8 +101,9 @@ function ShellInner({ children }: { children: React.ReactNode }) {
                 </SheetHeader>
                 <div className="px-2">
                   <NavLinks />
-                  <div className="mt-4 px-3">
+                  <div className="mt-4 flex items-center justify-between px-3">
                     <ProgressHint />
+                    <LockButton />
                   </div>
                 </div>
               </SheetContent>
@@ -111,13 +116,7 @@ function ShellInner({ children }: { children: React.ReactNode }) {
       </main>
       <footer className="border-t">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-4 py-6 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <p>
-            <a className="underline" href="https://ishsirjan.github.io">
-              ishsirjan.github.io
-            </a>
-            {" · "}
-            Built for a CNRS-sized week.
-          </p>
+          <p>Private studio. Not for GitHub Pages. Not for search engines.</p>
           <p>Checkboxes stay on this browser only.</p>
         </div>
       </footer>
