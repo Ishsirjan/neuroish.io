@@ -78,9 +78,9 @@ export const frequencyWhy = [
     channel: "LinkedIn",
     doThis: "2 posts / week · Tue + Fri · Paris morning",
     evidence:
-      "2026 creator reports (van der Blom-class): 2–4 posts/week is the sweet spot. Daily posting drops reach per post ~26% and fatigues the audience. First 60–90 minutes of comments decide distribution. Topic authority: 80% of posts on 2–3 themes. One link in the body still often hurts reach — put the PDF behind a comment.",
+      "2026 creator reports (van der Blom-class): 2–4 posts/week is the sweet spot. Daily posting drops reach per post ~26% and fatigues the audience. First 60–90 minutes of comments decide distribution. Topic authority: 80% of posts on 2–3 themes. A link in the body often hurts reach — you drop the arXiv in YOUR first comment.",
     yourJob:
-      "You already have ~20k followers. That is distribution, not discovery. Themes you own: (1) how to read an imaging paper, (2) leakage and pipelines, (3) MRI vs PET vs blood. Reply for 20 minutes after you post. Comment on five neuroimaging posts before you publish.",
+      "You already have ~20k followers. That is distribution, not discovery. Themes you own: (1) how to read an imaging paper, (2) leakage and pipelines, (3) MRI vs PET vs blood. End with a real question a PI can answer. Reply for 20 minutes. Never ‘comment WORD’ — that is Instagram, and on LinkedIn it looks like a lead magnet.",
     kill: "Pasting the Instagram caption. Announcing that you ‘are starting a show’. Leading with your job title — the headline already did that. A hashtag wall. ‘Delighted to share’.",
   },
   {
@@ -147,7 +147,7 @@ export const weekOps = {
     },
     {
       when: "Friday 70 min",
-      do: "Project Reel. Rewrite one paper into LinkedIn (180 words, comment-word at the end). Send three science notes.",
+      do: "Project Reel. Rewrite one paper into LinkedIn (180 words, end on a real question, arXiv in your first comment). Send three science notes.",
     },
     {
       when: "Tue / Fri 08:30 Paris",
