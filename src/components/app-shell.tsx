@@ -76,7 +76,7 @@ function ShellInner({ children }: { children: React.ReactNode }) {
               NeuroIsh.fr
             </p>
             <p className="mt-1 text-[11px] tracking-[0.16em] text-muted-foreground uppercase">
-              neuroish.fr.githubio
+              neuroish.fr
             </p>
           </Link>
           <div className="hidden md:flex md:flex-col md:items-end md:gap-1">

@@ -1,24 +1,24 @@
-# neuroish.fr.githubio
+# neuroish.fr
 
 Password-locked studio for **NeuroIsh.fr** — calendar, scripts, outreach.
 
 This is a **separate** GitHub Pages project. It does not replace [ishsirjan.github.io](https://ishsirjan.github.io) (the portfolio).
 
-## Name the GitHub repo exactly
+## GitHub repo name
 
-`neuroish.fr.githubio`
+`neuroish.fr` (private if you can; public is fine — the site still asks for a password)
 
-Keep it **private**. Then the website is:
+Website, once Pages is on:
 
-**https://ishsirjan.github.io/neuroish.fr.githubio/**
+**https://ishsirjan.github.io/neuroish.fr/**
 
-In that repo: **Settings → Pages → Source: GitHub Actions**.
+In the repo: **Settings → Pages → Source: GitHub Actions**.
 
 Do not name it `ishsirjan.github.io`.
 
 Password: `ish-private`
 
-GitHub Pages is a public host. Anyone with the URL *and* the password can open the studio.
+Anyone with the URL *and* the password can open it on a phone, laptop, or lab machine.
 
 ## Local
 

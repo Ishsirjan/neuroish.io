@@ -15,8 +15,8 @@ export default function UnlockPage() {
         </CardHeader>
         <CardContent>
           <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
-            neuroish.fr.githubio — a separate site from the portfolio. Only
-            this door is public. Calendar and scripts stay behind the password.
+            neuroish.fr — a separate site from the portfolio. Only this door
+            is public. Calendar and scripts stay behind the password.
           </p>
           <UnlockForm />
         </CardContent>
