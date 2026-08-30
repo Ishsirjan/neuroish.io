@@ -43,12 +43,11 @@ export const linkedinScripts: Script[] = [
       {
         heading: "Post",
         lines: [
-          "Most imaging AIs that call themselves multimodal give you a stage and a shrug.",
-          "A late-August preprint introduces a Modality Contribution Score: ablate MRI, ablate PET, force the two contributions to sum to one for every subject.",
-          "On ADNI-3 (n=327) their network stages CN / MCI / AD at AUC 0.881. The more interesting result is the gradient: PET’s share of the decision rises along the continuum, and a version of that pattern reappears in OASIS-3 (n=1,073).",
-          "I work on MRI-first radiomics. I am biased toward cheaper, more available scans. That is exactly why I want a number that tells me when PET is doing the real work for this person.",
-          "What I will watch: whether MCS changes a clinician’s next order, not just a reviewer’s next paragraph.",
-          "Comment PET and I will send you the paper.",
+          "A family leaves a consult with one word: Alzheimer's. The AI agreed. Nobody said which scan did the work.",
+          "August 2026, arXiv 2608.24931. They knock out MRI, knock out PET, force the two scores to add to one — per person.",
+          "327 ADNI-3 brains. Staging AUC 0.881. The plot I care about: PET's share 0.41 in cognitively normal, 0.49 in MCI, 0.67 in AD. Same climb in 1,073 OASIS-3 subjects.",
+          "I work MRI-first because PET is not a screening tool. That is why I want a number that tells me, for this person, when the expensive scan actually dragged the call.",
+          "Comment PET. I will send the PDF. I will not put the link here — LinkedIn punishes it, and I want the conversation.",
         ],
       },
     ],

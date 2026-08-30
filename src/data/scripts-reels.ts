@@ -46,13 +46,13 @@ export const reelScripts: Script[] = [
     onScreen: ["A story, then a table", "Shape · texture · grey", "Bad outline = fake AUC", "Write RADIOMICS"],
     sections: [
       {
-        heading: "Spoken — tell it like you were in the room",
+        heading: "Spoken — 80 words. Corridor, then bruise.",
         lines: [
-          "Imagine a radiologist at 7 a.m. She has already decided, in her bones, that this hippocampus looks tired.",
-          "Radiomics is the person who arrives after her and says: do not just tell me tired. Give me thickness. Give me the bump of the surface. Give me how grey sits next to grey.",
-          "Then a model tries to separate sick from not. That is the whole trick.",
-          "Here is the bruise. If the outline she drew was already the diagnosis, those beautiful numbers are laundry.",
-          "I use this on cortex in Alzheimer's work. Write RADIOMICS in the comments. I will send you the paper.",
+          "Seven a.m. A radiologist already knows this hippocampus looks tired.",
+          "Radiomics walks in after her and asks for a table: thickness, bump, how grey sits next to grey. Then a model tries to separate sick from not.",
+          "Labs in 2026 are tying those tables to plasma p-tau217. I did this on precuneus and fusiform in 382 people.",
+          "The bruise: if her outline was already the diagnosis, your 0.94 AUC is laundry.",
+          "Write RADIOMICS. I send the paper.",
         ],
       },
     ],
@@ -74,13 +74,13 @@ export const reelScripts: Script[] = [
     onScreen: ["Which scan decided?", "MRI + PET = 1.0", "PET climbs CN → AD", "Write PET"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 85 words. One family, three numbers.",
         lines: [
-          "Picture a family in a corridor that smells like sanitiser. A screen says Alzheimer's. The doctor says the AI agrees.",
-          "Nobody asks the only grown-up question: was that the MRI talking, or the PET.",
-          "You cannot PET everyone. So I want a number, for this person, of which picture dragged the call.",
-          "New preprint: they knock out MRI, knock out PET, force the two scores to add to one. PET's share climbs as the disease climbs. They saw a flavour of that again in a thousand other brains.",
-          "Write PET in the comments. I will send you the paper.",
+          "A family in a corridor. The screen says Alzheimer's. The AI agrees. Nobody asks which scan did the work.",
+          "August 2026 preprint. 327 ADNI brains. They knock out MRI, knock out PET, force the two scores to add to one.",
+          "PET's share: 41 percent in healthy people. 49 in MCI. 67 in Alzheimer's. Same climb in 1,073 other brains.",
+          "You cannot PET everyone. This number tells you when the expensive scan actually dragged the call.",
+          "Write PET. I send the paper.",
         ],
       },
     ],
@@ -103,13 +103,13 @@ export const reelScripts: Script[] = [
     onScreen: ["The keys are still in the bowl", "A street you cannot see", "Precuneus", "Write KEYS"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "The keys are still in the bowl by the door. The argument is about last Tuesday. Nobody has used the word Alzheimer's yet.",
-          "Put a finger on the midline of your skull, a few centimetres above the bump at the back. Under that is a neighbourhood called the precuneus. You will not find it on a plastic brain from the side. It hides.",
-          "It lights when you wander, remember yourself, stitch a scene. In Alzheimer's it often thins while the family is still doing the keys.",
-          "I measured it — with the fusiform — across two years, 382 people. A region is not a destiny. It is a place we finally know how to count.",
-          "Write KEYS in the comments. I will send you the paper.",
+          "The keys are in the bowl. The fight is about Tuesday. Nobody has said Alzheimer's.",
+          "Finger on the midline, a few centimetres above the bump at the back. Precuneus. Hidden. Lights when you wander and stitch a scene.",
+          "It often thins while the family is still doing the keys. I measured it, with the fusiform, at 0, 6, 12, 24 months. 382 people.",
+          "A region is not a destiny. It is a place we can count.",
+          "Write KEYS. I send the paper.",
         ],
       },
     ],
@@ -132,13 +132,13 @@ export const reelScripts: Script[] = [
     onScreen: ["3 a.m.", "Not a powder", "Astrocytes keep the gate", "Write NIGHT"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "It is 3 a.m. You are asleep. You think your neurons are putting the day on shelves.",
-          "A 2026 Neuron paper walks into that room and names the night staff: astrocytes, in a tiny thalamic gate.",
-          "They knock out a factor. The gate gets noisy. The mice still sleep. The memories do not — objects, space, the working kind. Walking and anxiety? Mostly fine.",
-          "Put the GABA pieces back. Some memory returns. If an account sells you a powder from this, block them.",
-          "Write NIGHT in the comments. I will send you the paper.",
+          "Three a.m. You think neurons are shelving the day. They are not the only staff.",
+          "Neuron, 2026. Astrocytes in a thalamic gate. Knock out NFIX. Less GABA. Gate gets noisy.",
+          "The mice still sleep. Object memory, space, working memory — messy. Walk and anxiety? Mostly fine. Put GABA back. Some memory returns.",
+          "If an account sells a powder from this paper, block them.",
+          "Write NIGHT. I send the paper.",
         ],
       },
     ],
@@ -161,13 +161,13 @@ export const reelScripts: Script[] = [
     onScreen: ["Not a shop lamp", "90 people · 6 months", "Flicker vs BCI vs sham", "Write 40HZ"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "Someone will try to sell a grandmother a flickering lamp because a mouse paper went viral.",
-          "Here is the human story. A trial opened. Ninety people. Amyloid-PET positive. An hour a day, six months.",
-          "Three rooms: fixed 40 Hz, a headset that listens to the brain and adjusts, and a sham so hope cannot cheat.",
-          "The sentence that matters is the primary outcome — a cognitive score — plus MRI volumes, which is my language. Until there are numbers, this is a question.",
-          "Write 40HZ in the comments. I will send you the paper — the trial page, the protocol, the thing that is not a shop.",
+          "A shop will sell your grandmother a 40 hertz lamp because a mouse paper went viral.",
+          "The human story is a trial. NCT07618481. Ninety people. Amyloid-PET positive. One hour a day. Six months.",
+          "Three arms: fixed flicker, a closed-loop EEG headset, and a sham. Primary outcome is a cognitive score, not a tweet. They also measure MRI volumes — my language.",
+          "No results yet. Until then it is a question, not a product.",
+          "Write 40HZ. I send the trial page.",
         ],
       },
     ],
@@ -190,13 +190,13 @@ export const reelScripts: Script[] = [
     onScreen: ["Friday folder", "Same steps. Same logs.", "Fail loudly", "Write PIPELINE"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 75 words.",
         lines: [
-          "It is Friday in a lab. A folder of scans. Someone wants to go home. The paper, later, will say data were processed.",
-          "I am an engineer on automated neuroimaging pipelines. That is not a flex. It is a contract with Friday-me.",
-          "Every scan meets the same steps. Writes the same logs. Fails in the same language. A human still opens the ugly surfaces.",
-          "Automation does not mean the computer did science. It means the same mistake cannot hide twice.",
-          "Write PIPELINE in the comments. I will send you the paper I make students read first.",
+          "Friday. A folder of T1s. Someone wants the tram. The paper will say ‘data were processed’.",
+          "I write pipelines at CNRS so Friday-me cannot hide. Same steps. Same logs. Fail in the same language. A human still opens the ugly surface.",
+          "Automation is not the computer doing science. It is the same mistake not hiding twice.",
+          "If the methods hide the software version, I do not trust the figure.",
+          "Write PIPELINE. I send the paper I make students read first.",
         ],
       },
     ],
@@ -218,13 +218,13 @@ export const reelScripts: Script[] = [
     onScreen: ["One missed night", "Trash stays in", "Sleep → junk in the blood", "Write SLEEP"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "You know the night. One more panel. The figure will be cleaner if you do not sleep. Your brain is less romantic about it.",
-          "Deep sleep is a night shift for waste. Fluid moves. Spaces open. The junk leaves.",
-          "2026, same people, two nights: one normal, one sleepless. After sleep, more amyloid-beta and tau showed up in morning blood — consistent with clearance out of brain. A missed night blocked that pattern.",
-          "The field still argues. I am not refereeing it in forty seconds. I am saying: protect the night before you buy a powder.",
-          "Write SLEEP in the comments. I will send you the paper.",
+          "You stayed up to finish a figure. Your brain is less romantic about it.",
+          "Same people. Two nights. 2026. After a normal night, more amyloid-beta and tau show up in morning blood — junk leaving the brain. After no sleep, that pattern dies.",
+          "The field still fights about glymphatics. I am not picking a winner in forty seconds.",
+          "I am saying: protect the night before you buy a nootropic.",
+          "Write SLEEP. I send the paper.",
         ],
       },
     ],
@@ -247,13 +247,13 @@ export const reelScripts: Script[] = [
     onScreen: ["One letter", "The brakes slip", "A vector needs a map", "Write SCN1A"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "A parent is holding a printout. One letter in a gene called SCN1A. A sodium channel. The cells that put the brakes on a network.",
-          "When the brakes slip, the brain seizes. That is the public story of many Dravet children.",
-          "Gene therapy wants to put function back in the right cells. A vector does not have GPS until we give it one. So imaging is not a side quest.",
-          "I will not discuss unpublished CNRS results. If you are a parent: this is context, not advice.",
-          "Write SCN1A in the comments. I will send you the paper I am allowed to share.",
+          "A parent holding a printout. One letter. SCN1A. A sodium channel on the cells that brake a network. Brakes slip. The brain seizes.",
+          "Gene therapy wants the right cells. A vector has no GPS until imaging gives it one.",
+          "I work around this science at CNRS. I will not give you unpublished numbers. This is not advice.",
+          "If you cannot see the targeting, you cannot claim the targeting.",
+          "Write SCN1A. I send the public paper.",
         ],
       },
     ],
@@ -279,13 +279,13 @@ export const reelScripts: Script[] = [
     onScreen: ["The room clapped", "Same brain ≠ new evidence", "Split people", "Write LEAK"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 75 words.",
         lines: [
-          "The room clapped. Ninety-eight percent. A student had split the scans eighty-twenty and the model looked holy.",
-          "Then someone in the back — the kind of person who ruins birthdays — asked: was the same patient on both sides.",
-          "Silence. A brain is friends with itself across time. That is not a rounding error. That is a different experiment.",
-          "Split by person. Then by site if you can. If a paper will not say how they split, I will not share their AUC.",
-          "Write LEAK in the comments. I will send you the paper I wish I had read first.",
+          "The room clapped at 98 percent. Eighty-twenty split. Holy slide.",
+          "Then someone in the back asked: was the same patient on both sides. Silence.",
+          "A brain is friends with itself across visits. That is not a rounding error. That is a different experiment.",
+          "Split people, then sites. If the paper hides the split, I hide the share button.",
+          "Write LEAK. I send the paper I wish I had read first.",
         ],
       },
     ],
@@ -307,13 +307,12 @@ export const reelScripts: Script[] = [
     onScreen: ["They said it was impossible", "1,240 days", "The cells stayed", "Write DOOR"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "For a long time the story was: after stroke, the tissue is too scarred. Do not ask single neurons to stay.",
-          "Most implants of this kind were tried after spinal injury or motor neuron disease. Stroke is more common. People were right to be scared.",
-          "2026: one person with chronic aphasia. Four arrays in the uninjured hemisphere. One thousand two hundred and forty days. The units stayed. They could find the same cells after gaps.",
-          "n equals one. That is a door, not a product. But impossible just lost a fight.",
-          "Write DOOR in the comments. I will send you the paper.",
+          "The story was: after stroke, scarred cortex will not hold a single-neuron recording.",
+          "2026 bioRxiv. One person. Chronic aphasia. Four 64-channel arrays in the other hemisphere. 111 sessions. 1,240 days. Units stayed. They found the same cells after gaps.",
+          "n equals one. A door, not a shop. Impossible still lost.",
+          "Write DOOR. I send the paper.",
         ],
       },
     ],
@@ -341,13 +340,12 @@ export const reelScripts: Script[] = [
     onScreen: ["4 a.m.", "Label + why", "A receipt, not a vibe", "Write AIDOC"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 75 words.",
         lines: [
-          "It is 4 a.m. in a hospital. A tired registrar still has to say why they called it. Most medical models spit a label and go quiet.",
-          "I built a sandbox I named AIDOC because I wanted a model that behaves like that registrar — narrow, tired, forced to show the evidence.",
-          "Image in. Short impression out. A trail of the features that moved the call. It is not a product. It is how I refuse mute classifiers.",
-          "If you cannot print the evidence, you are not explaining. You are decorating.",
-          "Write AIDOC in the comments. I will send you the paper that made me build it that way.",
+          "Four a.m. A registrar still has to say why. Most medical models spit a label and go back to sleep.",
+          "I built AIDOC so the model behaves like that registrar: image in, short impression out, the features that moved the call printed.",
+          "Not a product. A refusal. If you cannot print the evidence, you are decorating.",
+          "Write AIDOC. I send the paper that made me build it that way.",
         ],
       },
     ],
@@ -369,13 +367,12 @@ export const reelScripts: Script[] = [
     onScreen: ["Not the long needle", "A vial, if the paper earned it", "p-tau217", "Write VIAL"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 85 words. Real 2025 workflow.",
         lines: [
-          "There is the needle people talk about in whispers, and there is the one in the crook of the arm. Families already know which story they want.",
-          "The papers this year keep pointing at plasma p-tau217: a fragment the brain sheds, that blood can carry.",
-          "When the study is good, it tracks amyloid PET surprisingly well. When it is sloppy, it tracks who could afford the clinic.",
-          "A vial does not replace a neurologist. It might decide who gets the expensive scan sooner.",
-          "Write VIAL in the comments. I will send you the paper.",
+          "Families will sit through a lot. They still flinch at a lumbar puncture. They will give you an arm.",
+          "2025, K-ROAD plus ADNI: MRI atrophy first, plasma p-tau217 only for the middle third. They cut extra tests by about two-thirds and still sat near 94 percent for who would have been PET-positive in the Korean cohort.",
+          "A vial is not a neurologist. It is a triage tool — if the assay and the people are honest.",
+          "Write VIAL. I send the paper.",
         ],
       },
     ],
@@ -398,13 +395,13 @@ export const reelScripts: Script[] = [
     onScreen: ["The whole library", "Then your exam", "Show a new hospital", "Write MODEL"],
     sections: [
       {
-        heading: "Spoken",
+        heading: "Spoken — 80 words.",
         lines: [
-          "Imagine a student who read every book in the library, then sat an exam the librarian wrote. Of course they look brilliant.",
-          "A foundation model in MRI is that student: thousands of scans, many scanners, then a smaller honest test — if the authors are honest.",
-          "That library is power. It is also every site effect in a trench coat.",
-          "The useful papers tell you what failed: a new field strength, a new hospital, a new age band. If they only report the exam they wrote themselves, that is a talent show.",
-          "Write MODEL in the comments. I will send you the paper.",
+          "A student reads the whole library, then sits an exam the librarian wrote. Of course they look brilliant.",
+          "That is most foundation-model MRI demos. Thousands of scans. Many scanners. Then a test they designed.",
+          "Ask one thing: did they show a new hospital, a new field strength, a new age band. If not, it is a talent show.",
+          "I still want these models. I want the bruise.",
+          "Write MODEL. I send the paper.",
         ],
       },
     ],

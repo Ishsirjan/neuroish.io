@@ -20,6 +20,7 @@ import { cn } from "@/lib/utils"
 const links = [
   { href: "/", label: "Studio" },
   { href: "/you", label: "You" },
+  { href: "/playbook", label: "Playbook" },
   { href: "/frequency", label: "Frequency" },
   { href: "/calendar", label: "September" },
   { href: "/scripts", label: "Scripts" },

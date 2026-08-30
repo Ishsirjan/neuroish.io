@@ -19,6 +19,9 @@ export default function HomePage() {
 
       <div className="mb-8 flex flex-wrap gap-2">
         <Button render={<Link href="/calendar" />}>Full September</Button>
+        <Button variant="outline" render={<Link href="/playbook" />}>
+          Playbook
+        </Button>
         <Button variant="outline" render={<Link href="/scripts" />}>
           Scripts
         </Button>
