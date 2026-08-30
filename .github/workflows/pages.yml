@@ -30,7 +30,7 @@ jobs:
           OWNER="${{ github.repository_owner }}"
           if [[ "$NAME" == *.github.io ]]; then
             echo "Do not deploy this studio onto the portfolio user site." >&2
-            echo "Use a project repo such as neuroish-studio." >&2
+            echo "Use the project repo neuroish.fr.githubio — do not overwrite the portfolio." >&2
             exit 1
           fi
           echo "base_path=/${NAME}" >> "$GITHUB_OUTPUT"

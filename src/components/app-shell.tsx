@@ -73,10 +73,10 @@ function ShellInner({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3">
           <Link href="/" className="min-w-0">
             <p className="font-heading text-lg leading-none tracking-tight">
-              NeuroIsh Studio
+              NeuroIsh.fr
             </p>
             <p className="mt-1 text-[11px] tracking-[0.16em] text-muted-foreground uppercase">
-              Ishsirjan · Sep 2026
+              neuroish.fr.githubio
             </p>
           </Link>
           <div className="hidden md:flex md:flex-col md:items-end md:gap-1">

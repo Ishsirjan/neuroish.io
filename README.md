@@ -1,22 +1,24 @@
-# NeuroIsh Studio (password-locked Pages site)
+# neuroish.fr.githubio
 
-A working studio for Ishsirjan — calendar, scripts, outreach — published as a **separate** GitHub Pages project. It does **not** replace [ishsirjan.github.io](https://ishsirjan.github.io) (the portfolio).
+Password-locked studio for **NeuroIsh.fr** — calendar, scripts, outreach.
 
-The public URL only shows a lock. The calendar and scripts stay behind a password.
+This is a **separate** GitHub Pages project. It does not replace [ishsirjan.github.io](https://ishsirjan.github.io) (the portfolio).
 
-## Public URL (after you create the GitHub repo)
+## Name the GitHub repo exactly
 
-Name the repository `neuroish-studio` (private). Then Pages will be:
+`neuroish.fr.githubio`
 
-**https://ishsirjan.github.io/neuroish-studio/**
+Keep it **private**. Then the website is:
 
-Do not name the repo `ishsirjan.github.io`. That is already the portfolio.
+**https://ishsirjan.github.io/neuroish.fr.githubio/**
 
-In the new repo: **Settings → Pages → Source: GitHub Actions**.
+In that repo: **Settings → Pages → Source: GitHub Actions**.
 
-Password (change it): `ish-private`
+Do not name it `ishsirjan.github.io`.
 
-Set `NEXT_PUBLIC_STUDIO_PASSWORD` in GitHub → Settings → Secrets and Variables → Actions if you want a different password on the live site. GitHub Pages is a public host; anyone with the URL *and* the password can open the studio. Do not post either.
+Password: `ish-private`
+
+GitHub Pages is a public host. Anyone with the URL *and* the password can open the studio.
 
 ## Local
 
@@ -26,7 +28,3 @@ npm run dev
 ```
 
 [http://127.0.0.1:43147](http://127.0.0.1:43147)
-
-## What is inside
-
-Shortcut calendar (shoot / post / script), frequencies, spoken scripts, outreach drafts. About seven hours a week. Both podcasts sign off: **I am Ish. ishsirjan.github.io.**
