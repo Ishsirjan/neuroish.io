@@ -23,6 +23,12 @@ export function scriptById(id: string) {
   return scripts.find((s) => s.id === id)
 }
 
+/** What you say to camera. One story. No title, no director notes, no caption. */
+export function spokenFromScript(script: { spoken?: string; sections: { lines: string[] }[] }) {
+  if (script.spoken?.trim()) return script.spoken.trim()
+  return script.sections.flatMap((section) => section.lines).join("\n\n")
+}
+
 export function scriptsByKind(kind: ScriptKind | "all") {
   if (kind === "all") return scripts
   return scripts.filter((s) => s.kind === kind)

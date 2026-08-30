@@ -44,6 +44,8 @@ export interface Script {
   scrollStop?: string
   onScreen?: string[]
   sections: ScriptSection[]
+  /** Joined spoken lines. Prefer this when filming; do not invent a second script. */
+  spoken?: string
   close: string
   caption: string
   commentAsk?: string

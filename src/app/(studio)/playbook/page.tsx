@@ -4,6 +4,7 @@ import {
   frequencyWhy,
   papersThisMonth,
   peers,
+  howPeopleWrite,
   playbook,
   positioningGap,
   scriptCraft,
@@ -92,6 +93,18 @@ export default function PlaybookPage() {
       </section>
 
       <section className="mt-10">
+        <h2 className="font-heading text-2xl">{howPeopleWrite.title}</h2>
+        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+          {howPeopleWrite.lede}
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed">
+          {howPeopleWrite.points.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-10">
         <h2 className="font-heading text-2xl">{scriptCraft.title}</h2>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed">
           {scriptCraft.problems.map((item) => (
@@ -102,7 +115,7 @@ export default function PlaybookPage() {
           <Card>
             <CardHeader>
               <p className="text-[11px] tracking-[0.16em] text-muted-foreground uppercase">
-                Vague — do not say this
+                Telegram — do not say this
               </p>
             </CardHeader>
             <CardContent className="text-sm leading-relaxed text-muted-foreground">
@@ -112,7 +125,7 @@ export default function PlaybookPage() {
           <Card className="border-teal/30">
             <CardHeader>
               <p className="text-[11px] tracking-[0.16em] text-teal uppercase">
-                Engaging — say this
+                One story — say this
               </p>
             </CardHeader>
             <CardContent className="text-sm leading-relaxed">

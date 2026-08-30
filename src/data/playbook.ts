@@ -112,26 +112,38 @@ export const frequencyWhy = [
   },
 ]
 
+export const howPeopleWrite = {
+  title: "How people who actually get watched write these",
+  lede: "This is not a marketing thread. It is what working science communicators and 2025–26 Reels reports keep repeating.",
+  points: [
+    "Animate Your Science, the lab-to-camera people: hook in three seconds, value until about fifty, then tell them what to do. Never start with your name. High production looks like an ad. They stop for a face.",
+    "Randy Olson’s ABT is the spine most scientists still skip. AND: the world you thought you knew. BUT: the turn. THEREFORE: what it means. One turn. Not four findings.",
+    "Kirsten Banks / selfie model: window light, paper title behind your head, sixty seconds, no dance. Her career went up. You film standing. Captions on. Batch Wednesday night.",
+    "Comment WORD is how Instagram science accounts actually hand over a PDF. One uppercase word that matches the story — NIGHT, PET, LEAK — said out loud and written last in the caption. Links in captions die. ‘Comment below’ is fog. They type the word, you DM the paper. LinkedIn never does this. You drop the arXiv in your own first comment.",
+    "Telegram notes are for you. The camera gets full sentences, the way you would tell a friend on the tram. Keep NFIX and GABA. Hide the method and you sound like wellness. Stack fragments and you sound like a slide deck.",
+  ],
+}
+
 export const scriptCraft = {
-  title: "Why the old scripts felt vague",
+  title: "Why the old scripts felt like a telegram",
   problems: [
-    "They opened like a lecture (‘Radiomics is this…’) instead of a crime scene (‘The room clapped at 98%. Then someone asked who was in the test set.’).",
-    "They named a method without a number a stranger can hold. ‘PET’s share climbs’ is fog. ‘41% → 67% from healthy to Alzheimer’s, 327 people’ is a Reel.",
-    "They stacked four ideas. A 40-second Reel holds one claim and one bruise.",
-    "They ended on a brand line. The algorithm pays you for a comment. The word is the CTA.",
-    "The first LinkedIn draft announced a studio and a job title. Peers do not do that. They start on a sentence that annoyed them in a paper.",
+    "They were notes, not speech. ‘Knock out NFIX. Less GABA. Gate gets noisy.’ is how you remember a paper. It is not how a human tells a story out loud.",
+    "They hid the science behind soft words, or they dumped the science with no story. You need both: NFIX and GABA, inside a night you can see.",
+    "They stacked four ideas. A sixty-second Reel holds one claim and one bruise.",
+    "They ended on a brand line. The algorithm pays you for a comment. The word is the CTA, and only on Instagram.",
+    "The first LinkedIn draft announced a studio. Peers start on a sentence that annoyed them in a paper.",
   ],
   formula: [
     "0–3s — a sentence you would say in a corridor. No name. No ‘today I want to talk’.",
-    "3–35s — one person or one number. Then the ‘but’. Then the limit.",
-    "Last 5s — ‘Write WORD. I send the paper.’ Face. Silence.",
+    "Then ABT: AND the world they thought they knew. BUT the turn in this paper. THEREFORE what it means, including the limit.",
+    "Last 5s — ‘If you want the paper, write WORD in the comments and I will send it to you.’ Face. Silence.",
     "On-screen: four lines max. Last line is the WORD in caps.",
-    "Length: 70–90 spoken words. If you cannot say it walking to the tram, cut it.",
+    "One message. Full sentences. If you cannot say it walking to the tram, it is still notes.",
   ],
   exampleBad:
-    "Radiomics is a method where we extract quantitative features from medical images and then apply a machine learning model. It is important to remember segmentation quality matters.",
+    "Neuron, 2026. Astrocytes in a thalamic gate. Knock out NFIX. Less GABA. Gate gets noisy. Write NIGHT.",
   exampleGood:
-    "A radiologist already knows this hippocampus looks tired. Radiomics walks in and asks for a table. If the outline was the diagnosis, the 0.94 AUC is laundry. Write RADIOMICS. I send the paper.",
+    "It's three in the morning and you are asleep, and most of us were taught that your neurons are filing the day onto shelves. They are not the only staff still working. A paper in Neuron this year knocked out NFIX in astrocytes at a thalamic gate. The cells made less GABA. The gate got noisy. The mice still slept. Memory did not. When they put GABA back, some of the memory came back. If you want the paper, write NIGHT in the comments and I will send it to you. If an account sells a powder from this, block them.",
 }
 
 export const weekOps = {
@@ -161,6 +173,11 @@ export const weekOps = {
 }
 
 export const papersThisMonth = [
+  {
+    word: "NIGHT",
+    paper: "Murali et al., Neuron 2026 — astrocytic NFIX in the thalamic reticular nucleus",
+    hold: "Knock out NFIX in astrocytes. Less GABA. Gate gets noisy. Mice still sleep. Object, space, and working memory get messy. Walk and anxiety stay mostly fine. Put GABA back, some memory returns. Not a powder.",
+  },
   {
     word: "PET",
     paper: "Modality Contribution Score — arXiv 2608.24931 (Aug 2026)",

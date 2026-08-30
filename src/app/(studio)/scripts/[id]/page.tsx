@@ -4,26 +4,7 @@ import { ChannelBadge, KindBadge } from "@/components/channel-badge"
 import { CopyButton } from "@/components/copy-button"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { scripts, scriptById } from "@/data/scripts"
-
-function spokenText(id: string) {
-  const script = scriptById(id)
-  if (!script) return ""
-  const parts = [
-    script.title,
-    script.hook,
-    ...script.sections.flatMap((section) => [
-      section.heading,
-      ...section.lines,
-    ]),
-    script.close,
-    script.commentAsk
-      ? `Write ${script.commentAsk} in the comments. I will send you the paper.`
-      : "",
-    script.caption,
-  ]
-  return parts.filter(Boolean).join("\n\n")
-}
+import { scripts, scriptById, spokenFromScript } from "@/data/scripts"
 
 export async function generateStaticParams() {
   return scripts.map((script) => ({ id: script.id }))
@@ -47,6 +28,7 @@ export default async function ScriptPage({
   const { id } = await params
   const script = scriptById(id)
   if (!script) notFound()
+  const spoken = spokenFromScript(script)
 
   return (
     <article className="max-w-3xl">
@@ -67,8 +49,23 @@ export default async function ScriptPage({
       </p>
 
       <div className="mt-5">
-        <CopyButton text={spokenText(script.id)} label="Copy full script" />
+        <CopyButton text={spoken} label="Copy what you say" />
       </div>
+
+      <Card className="mt-8 border-foreground/10">
+        <CardHeader className="flex-row items-start justify-between gap-3">
+          <div>
+            <p className="text-[11px] tracking-[0.16em] text-teal uppercase">
+              Say this · start to finish
+            </p>
+            <CardTitle className="font-heading text-2xl">One story</CardTitle>
+          </div>
+          <CopyButton text={spoken} label="Copy" />
+        </CardHeader>
+        <CardContent className="space-y-4 text-base leading-relaxed whitespace-pre-wrap">
+          {spoken}
+        </CardContent>
+      </Card>
 
       <Card className="mt-8 border-teal/25 bg-teal-soft">
         <CardHeader>
