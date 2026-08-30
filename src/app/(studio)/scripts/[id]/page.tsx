@@ -33,7 +33,7 @@ export async function generateMetadata({
 }) {
   const { id } = await params
   const script = scriptById(id)
-  return { title: script ? `${script.title} · NeuroIsh Studio` : "Script" }
+  return { title: script ? `${script.title} · NeuroIsh.fr` : "Script" }
 }
 
 export default async function ScriptPage({
