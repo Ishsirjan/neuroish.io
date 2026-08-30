@@ -123,28 +123,27 @@ export const reelScripts: Script[] = [
     channel: "instagram",
     title: "Your memories have a night shift",
     subtitle: "One idea: the mice still slept. Memory did not. The night staff were astrocytes, and they needed GABA.",
-    duration: "60s",
+    duration: "50s",
     whyYou:
-      "Tell it the way you would at dinner. Keep NFIX and GABA in your mouth — do not hide them behind ‘a factor’ and ‘a calming chemical’. One paper. No powder.",
-    scrollStop: "You think your neurons file the day while you sleep. They are not the only ones on shift.",
-    hook: "It's three in the morning and you are asleep, and most of us were taught that your neurons are filing the day onto shelves.",
+      "Do not teach. Do not announce the bruise. Land 3 a.m., then ‘the mice still slept’ as soon as NFIX and GABA are in the air. Keep both words. No powder.",
+    scrollStop: "The mice still slept. Memory did not.",
+    hook: "It's three in the morning, you are asleep, and you think your neurons are filing the day onto shelves.",
     commentAsk: "NIGHT",
     onScreen: ["3 a.m.", "They still slept", "Memory did not", "Write NIGHT"],
     sections: [
       {
         heading: "Say this as one thought",
         lines: [
-          "It's three in the morning and you are asleep, and most of us were taught that your neurons are the ones filing the day onto shelves. They are not the only staff still working.",
-          "A paper in Neuron this year looked at astrocytes — the star-shaped cells — sitting in a thalamic gate. The researchers knocked out a gene in those astrocytes called NFIX. The cells made less GABA. The gate got noisy.",
-          "Here is the part that stayed with me. The mice still slept. What fell apart was memory — objects, space, the kind of working memory you use to hold a thought. Walking and anxiety stayed mostly fine. When they put GABA back, some of the memory came back with it.",
-          "So this is not a story that says sleep fixes memory. It is a story that says the night staff in that gate need enough GABA, or the files do not get filed.",
-          "If an account in the comments is selling a powder from this paper, block them. That is not what this study is for.",
+          "It's three in the morning, you are asleep, and you think your neurons are filing the day onto shelves. They are not the only staff still working.",
+          "A paper in Neuron this year knocked out a gene called NFIX in astrocytes sitting in a thalamic gate. Those cells made less GABA. The gate got noisy. And the mice still slept.",
+          "Sleep was not what broke. Object memory, space, working memory — those got messy. Walking and anxiety stayed mostly fine. When they put GABA back, some of the memory came back with it.",
+          "The night staff in that gate need enough GABA, or the files do not get filed. If an account is selling a powder from this paper, block them.",
           "If you want the paper, write NIGHT in the comments and I will send it to you.",
         ],
       },
     ],
-    close: "Talk like you are telling one friend. Do not speed up on NFIX. Face the camera on NIGHT.",
-    caption: `You think your neurons file the day while you sleep. They are not the only ones on shift.\n\n${captionEnd("NIGHT")}`,
+    close: "Do not smile on ‘they still slept’. Face the camera on NIGHT.",
+    caption: `The mice still slept. Memory did not.\n\n${captionEnd("NIGHT")}`,
     hashtags: ["#astrocytes", "#sleep", "#memory", "#glia", "#Neuron"],
     sources: [
       {

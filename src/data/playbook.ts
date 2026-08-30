@@ -143,7 +143,7 @@ export const scriptCraft = {
   exampleBad:
     "Neuron, 2026. Astrocytes in a thalamic gate. Knock out NFIX. Less GABA. Gate gets noisy. Write NIGHT.",
   exampleGood:
-    "It's three in the morning and you are asleep, and most of us were taught that your neurons are filing the day onto shelves. They are not the only staff still working. A paper in Neuron this year knocked out NFIX in astrocytes at a thalamic gate. The cells made less GABA. The gate got noisy. The mice still slept. Memory did not. When they put GABA back, some of the memory came back. If you want the paper, write NIGHT in the comments and I will send it to you. If an account sells a powder from this, block them.",
+    "It's three in the morning, you are asleep, and you think your neurons are filing the day onto shelves. They are not the only staff still working. A paper in Neuron this year knocked out NFIX in astrocytes at a thalamic gate. Less GABA. The gate got noisy. And the mice still slept. Sleep was not what broke. Memory was. Put GABA back and some of it returns. Write NIGHT. If an account sells a powder, block them.",
 }
 
 export const weekOps = {
