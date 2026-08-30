@@ -39,37 +39,6 @@ export function CalendarView() {
         ))}
       </div>
 
-      <div className="mb-8 hidden grid-cols-7 gap-1 md:grid">
-        {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((d) => (
-          <p
-            key={d}
-            className="px-1 text-[11px] tracking-[0.14em] text-muted-foreground uppercase"
-          >
-            {d}
-          </p>
-        ))}
-        {Array.from({
-          length:
-            (new Date(`${calendar[0].date}T00:00:00Z`).getUTCDay() + 6) % 7,
-        }).map((_, i) => (
-          <div key={`blank-${i}`} />
-        ))}
-        {calendar.map((day) => (
-          <a
-            key={day.date}
-            href={`#day-${day.date}`}
-            className={cn(
-              "rounded-lg border bg-card p-2 text-left text-xs leading-snug transition-colors hover:border-foreground/30",
-              today === day.date && "border-teal bg-teal-soft",
-              week !== 0 && day.week !== week && "opacity-40"
-            )}
-          >
-            <p className="font-medium">{formatDate(day.date)}</p>
-            <p className="mt-1 text-muted-foreground">{day.theme}</p>
-          </a>
-        ))}
-      </div>
-
       <div className="space-y-4">
         {days.map((day) => (
           <Card

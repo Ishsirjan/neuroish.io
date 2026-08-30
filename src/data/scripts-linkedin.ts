@@ -9,11 +9,13 @@ export const linkedinScripts: Script[] = [
     subtitle: "Tue 1 Sep · launch",
     duration: "180 words",
     whyYou: "Twenty thousand people already watch this feed. This is the cheapest distribution you will ever have.",
-    hook: "I am an engineer at IGMM–CNRS. I am also going to be on a microphone twice a month, twice.",
+    scrollStop: "I work on brains in a CNRS lab. I am starting two shows. They are not the same show.",
+    hook: "I work on brains in a CNRS lab. I am starting two shows. They are not the same show.",
     sections: [
       {
         heading: "Post",
         lines: [
+          "I work on brains in a CNRS lab. I am starting two shows. They are not the same show.",
           "I build automated neuroimaging pipelines in Montpellier. Before that I trained in bioinformatics at IIT Hyderabad and spent years trying to turn messy biological data into something a human can act on.",
           "I am launching two podcasts this month.",
           "BioIsh is neuroscience. Papers, methods, neurotech, the bioinformatics under imaging. Journal club tempo. No guru voice.",
@@ -36,6 +38,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Fri 4 Sep",
     duration: "160 words",
     whyYou: "Shows you read like a reviewer, not a recapper.",
+    scrollStop: "The model said Alzheimer's. Which scan actually decided — MRI or PET?",
     hook: "A multimodal model that cannot say which scan mattered is a coin toss in a white coat.",
     sections: [
       {
@@ -63,6 +66,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Tue 8 Sep",
     duration: "140 words",
     whyYou: "Episode drop. One finding, one bruise, one link.",
+    scrollStop: "Training accuracy is a compliment a model pays itself. I said that on the mic, about my own paper.",
     hook: "I published a paper that classified Alzheimer’s stages from two cortical neighbourhoods. Today I explain it, including the part where training accuracy flatters us.",
     sections: [
       {
@@ -88,6 +92,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Fri 11 Sep",
     duration: "170 words",
     whyYou: "Positions you as someone who can protect a non-specialist from neurotech marketing.",
+    scrollStop: "40 hertz is having a second life. This time it is wearing a headset. Read the trial, not the shop.",
     hook: "40 hertz is having a second life, this time wearing a headset.",
     sections: [
       {
@@ -117,6 +122,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Tue 15 Sep",
     duration: "170 words",
     whyYou: "Your professional network includes people who will misunderstand this show. Pre-empt them with dignity.",
+    scrollStop: "I started a Sikhi podcast. I will not baptise the default mode network.",
     hook: "I started a Sikhi podcast. I am not trying to convert the lab, and I am not trying to baptise the default mode network.",
     sections: [
       {
@@ -143,6 +149,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Fri 18 Sep",
     duration: "160 words",
     whyYou: "Connects your public repo, the lab's public disease area, and responsible speech.",
+    scrollStop: "Rare disease work dies when imaging is an afterthought to the vector.",
     hook: "Rare disease work dies when the imaging is an afterthought to the vector.",
     sections: [
       {
@@ -168,6 +175,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Tue 22 Sep",
     duration: "130 words",
     whyYou: "Episode drop.",
+    scrollStop: "A beautiful model on a dirty T1 is a press release.",
     hook: "A beautiful model on a dirty T1 is a press release.",
     sections: [
       {
@@ -192,6 +200,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Fri 25 Sep",
     duration: "150 words",
     whyYou: "Project post. Shows you ship.",
+    scrollStop: "I do not trust a medical model that cannot show its working.",
     hook: "I do not trust a medical model that cannot show its working.",
     sections: [
       {
@@ -219,6 +228,7 @@ export const linkedinScripts: Script[] = [
     subtitle: "Tue 29 Sep",
     duration: "160 words",
     whyYou: "Closes the loop with the same audience you opened on 1 Sep.",
+    scrollStop: "I treated content like a pipeline: fixed cadence, logged failures, no silent skips.",
     hook: "I treated content like a pipeline: fixed cadence, logged failures, no silent skips.",
     sections: [
       {

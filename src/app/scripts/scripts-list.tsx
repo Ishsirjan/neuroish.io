@@ -76,8 +76,11 @@ export function ScriptsList() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="text-foreground">
+                  {script.scrollStop ?? script.hook}
+                </p>
                 <p>{script.subtitle}</p>
-                <p className="text-foreground">{script.duration}</p>
+                <p>{script.duration}</p>
               </CardContent>
             </Card>
           </Link>

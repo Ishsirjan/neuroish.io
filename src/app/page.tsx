@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { PageHeader } from "@/components/page-header"
+import { ShortcutCalendar } from "@/components/shortcut-calendar"
 import { TodayPanel } from "@/components/today-panel"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -13,11 +14,11 @@ export default function HomePage() {
       <PageHeader
         kicker="September 2026 · month one"
         title="A content studio that fits a CNRS week."
-        lede={`${profile.name} already hosts BioIsh and already posts as ${profile.instagram}. This month names the second show, locks a frequency a working scientist can keep, and puts every script and reach-out in one place.`}
+        lede={`${profile.name} already hosts BioIsh and already posts as ${profile.instagram}. Tap a day to see what you shoot, what goes live, and the script that holds the room.`}
       />
 
       <div className="mb-8 flex flex-wrap gap-2">
-        <Button render={<Link href="/calendar" />}>Open September</Button>
+        <Button render={<Link href="/calendar" />}>Full September</Button>
         <Button variant="outline" render={<Link href="/scripts" />}>
           Scripts
         </Button>
@@ -26,7 +27,11 @@ export default function HomePage() {
         </Button>
       </div>
 
-      <TodayPanel />
+      <ShortcutCalendar />
+
+      <div className="mt-10">
+        <TodayPanel />
+      </div>
 
       <section className="mt-10 grid gap-4 md:grid-cols-3">
         {shows.map((show) => (

@@ -41,6 +41,7 @@ export interface Script {
   duration: string
   whyYou: string
   hook: string
+  scrollStop?: string
   onScreen?: string[]
   sections: ScriptSection[]
   close: string

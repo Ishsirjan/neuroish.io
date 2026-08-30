@@ -10,16 +10,17 @@ export const podcastScripts: Script[] = [
     duration: "28–32 min",
     whyYou:
       "This is your first-author medRxiv work. You extracted nine FreeSurfer radiomic features from precuneus and fusiform gyrus across 0, 6, 12, and 24 months. Nobody else can tell this story from the inside without guessing.",
+    scrollStop: "Alzheimer's does not kick the door. It edits two quiet streets while the family argues about the keys.",
     hook: "If Alzheimer's announced itself with a billboard, we would have solved it. It does not. It edits two quiet neighbourhoods of cortex years before anyone fails a memory test in a way a family can name.",
     sections: [
       {
         heading: "Cold open (0:00–1:10)",
         duration: "1 min",
         lines: [
-          "Record this standing, no music yet.",
-          "“I am Ishsirjan Kaur Chandok. I build neuroimaging pipelines in Montpellier, at the Kremer lab at IGMM–CNRS. Before that I trained in bioinformatics at IIT Hyderabad.”",
-          "“This is BioIsh. One idea, explained the way I wish journal club started — with the anatomy, then the method, then the claim, then the bruise on the claim.”",
-          "“Today: two regions of your cortex that start whispering years before a diagnosis. And a paper I put my name on, so I will be unkind to it in the right places.”",
+          "Record this standing, no music yet. Do not start with your CV.",
+          "“Alzheimer's does not kick the door. It edits two quiet streets in your cortex while the family is still arguing about the keys.”",
+          "“I am Ish. I build neuroimaging pipelines in Montpellier, at the Kremer lab at IGMM–CNRS. I trained in bioinformatics at IIT Hyderabad.”",
+          "“This is BioIsh. Anatomy, then method, then the claim, then the bruise on the claim. Today: two regions that whisper first — and a paper with my name on it, so I will be unkind to it in the right places.”",
         ],
       },
       {
@@ -100,15 +101,17 @@ export const podcastScripts: Script[] = [
     duration: "24–28 min",
     whyYou:
       "You live both rooms: a CNRS neuroimaging lab and a Punjabi Sikh life. The internet is full of people who flatten Simran into ‘meditation lowers cortisol’. You can refuse that flattening and still be precise.",
+    scrollStop: "Haumai is not self-esteem. If someone told you it was, they sold you a TED talk.",
     hook: "Haumai is not self-esteem. It is the small tight ‘I’ that narrates the day. Neuroscience has a network that loves that job. The mistake is to say they are the same thing.",
     sections: [
       {
         heading: "Cold open (0:00–1:20)",
         duration: "1 min",
         lines: [
-          "“Sat sri akaal. I am Ishsirjan Kaur. I work on brains in a French lab, and I grew up inside Sikhi, not as a topic.”",
-          "“This is Chardi Kala. Not a path, not a granth class. Khoj. I will put a Sikh idea next to a scientific one and refuse to let either swallow the other.”",
-          "“Today: haumai. And a network in the cortex that lights when the mind talks about itself.”",
+          "“Haumai is not self-esteem. If someone told you it was, they sold you a TED talk.”",
+          "“Sat sri akaal. I am Ish. I work on brains in a French lab, and I grew up inside Sikhi — not as a topic, as a life.”",
+          "“This is Chardi Kala. Khoj. I will put a Sikh idea next to a scientific one and refuse to let either swallow the other.”",
+          "“Today: the tight ‘I’, and a cortical network that lights when the mind talks about itself. I will not say they are the same thing.”",
         ],
       },
       {
@@ -167,14 +170,16 @@ export const podcastScripts: Script[] = [
     duration: "30–34 min",
     whyYou:
       "Your job title is not ‘content creator’. It is Assistant Engineer on automated neuroimaging pipelines. This episode is the reason BioIsh is not another explainer podcast hosted by a journalist.",
+    scrollStop: "A beautiful model on a dirty T1 is a press release.",
     hook: "A beautiful model on a dirty T1 is a press release. A boring pipeline that fails loudly is science.",
     sections: [
       {
         heading: "Cold open",
         duration: "1 min",
         lines: [
-          "“Last time I talked about two cortical neighbourhoods. Today I talk about the factory that measures them.”",
-          "“If you have never converted a folder of DICOMs into something a statistician can touch, this episode is a map. If you have, this episode is a confession.”",
+          "“A beautiful model on a dirty T1 is a press release. A boring pipeline that fails loudly is science.”",
+          "“Last time: two cortical neighbourhoods. Today: the factory that measures them.”",
+          "“If you have never turned a folder of DICOMs into something a statistician can touch, this is a map. If you have, this is a confession.”",
         ],
       },
       {
@@ -235,13 +240,15 @@ export const podcastScripts: Script[] = [
     duration: "24–28 min",
     whyYou:
       "You have run seva-shaped rooms: NSS, Project CLAP, Hult Prize, WICCI, student government. You also know oxytocin headlines are usually garbage. This episode needs both instincts.",
+    scrollStop: "Langar is not a soup kitchen with better branding. It is a machine for dissolving rank.",
     hook: "Langar is not a soup kitchen with better branding. It is a technology for dissolving rank. The brain has opinions about rank.",
     sections: [
       {
         heading: "Cold open",
         duration: "1 min",
         lines: [
-          "“Last time I talked about the ‘I’. Today I talk about what happens when the ‘I’ is handed a jhaadu and a 200-litre pot.”",
+          "“Langar is not a soup kitchen with better branding. It is a machine for dissolving rank. The brain has opinions about rank.”",
+          "“Last time: the ‘I’. Today: what happens when that ‘I’ is handed a jhaadu and a 200-litre pot.”",
           "“Seva is the most public Sikh technology and the most poorly exported. People turn it into volunteering hours. That is like calling simran a screen-time setting.”",
         ],
       },

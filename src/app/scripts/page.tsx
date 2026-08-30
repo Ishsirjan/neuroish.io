@@ -7,7 +7,7 @@ export default function ScriptsPage() {
       <PageHeader
         kicker="Speak these"
         title="Scripts for a scientist who already knows how to hold a room."
-        lede="Explainers, recent papers, your neurotech and bioinformatics projects, science news, four full podcasts, and the LinkedIn rewrites. Say them standing. Do not polish the stumbles out of existence."
+        lede="Every piece now starts with a scroll-stop line — the first second, the first caption line, the thing you say before your name. Then the science. Say them standing."
       />
       <ScriptsList />
     </div>

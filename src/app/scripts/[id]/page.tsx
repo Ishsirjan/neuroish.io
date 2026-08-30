@@ -74,6 +74,22 @@ export default async function ScriptPage({
         <CardContent className="text-sm leading-relaxed">{script.whyYou}</CardContent>
       </Card>
 
+      {script.scrollStop ? (
+        <Card className="mt-8 border-saffron/30 bg-saffron-soft">
+          <CardHeader>
+            <p className="text-[11px] tracking-[0.16em] text-saffron uppercase">
+              Stop the scroll
+            </p>
+            <CardTitle className="font-heading text-2xl leading-snug">
+              {script.scrollStop}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground">
+            First line on screen. First line of the caption. Say it before your name.
+          </CardContent>
+        </Card>
+      ) : null}
+
       <section className="mt-8">
         <h2 className="font-heading text-2xl">Hook</h2>
         <p className="mt-2 text-lg leading-relaxed">{script.hook}</p>
