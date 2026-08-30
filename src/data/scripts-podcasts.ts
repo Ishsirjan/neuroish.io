@@ -1,0 +1,292 @@
+import type { Script } from "./types"
+
+export const podcastScripts: Script[] = [
+  {
+    id: "pod-bioish-1",
+    kind: "podcast",
+    channel: "bioish",
+    title: "BioIsh 1 — The brain regions that whisper Alzheimer's first",
+    subtitle: "Precuneus, fusiform gyrus, radiomics, and what a 382-person ADNI-style study can and cannot claim.",
+    duration: "28–32 min",
+    whyYou:
+      "This is your first-author medRxiv work. You extracted nine FreeSurfer radiomic features from precuneus and fusiform gyrus across 0, 6, 12, and 24 months. Nobody else can tell this story from the inside without guessing.",
+    hook: "If Alzheimer's announced itself with a billboard, we would have solved it. It does not. It edits two quiet neighbourhoods of cortex years before anyone fails a memory test in a way a family can name.",
+    sections: [
+      {
+        heading: "Cold open (0:00–1:10)",
+        duration: "1 min",
+        lines: [
+          "Record this standing, no music yet.",
+          "“I am Ishsirjan Kaur Chandok. I build neuroimaging pipelines in Montpellier, at the Kremer lab at IGMM–CNRS. Before that I trained in bioinformatics at IIT Hyderabad.”",
+          "“This is BioIsh. One idea, explained the way I wish journal club started — with the anatomy, then the method, then the claim, then the bruise on the claim.”",
+          "“Today: two regions of your cortex that start whispering years before a diagnosis. And a paper I put my name on, so I will be unkind to it in the right places.”",
+        ],
+      },
+      {
+        heading: "Why these two regions (1:10–7:00)",
+        duration: "6 min",
+        lines: [
+          "Draw the medial surface with words. Precuneus: tucked against the midline, behind the somatosensory strip, in the posteromedial parietal lobe. It is a hub of the default mode network. It lights when you wander, remember yourself, and stitch scenes.",
+          "Fusiform gyrus: ventral temporal lobe, the face-and-form stream. Not just ‘face area’ folklore. Object identity, word form, the feeling that a thing is a thing.",
+          "In Alzheimer's literature these two keep showing early thinning and volume loss. That is not a vibe. That is replicated morphometry.",
+          "Say this clearly: we did not discover the precuneus. We asked whether a small, interpretable radiomic set from these two regions could classify stages and track 24-month change.",
+        ],
+      },
+      {
+        heading: "What we actually did (7:00–16:00)",
+        duration: "9 min",
+        lines: [
+          "Cohort: 382 people. 134 cognitively normal, 149 MCI, 99 AD. T1-weighted MRI at 0, 6, 12, 24 months.",
+          "Pipeline: FreeSurfer. Nine radiomic features, left and right, precuneus and fusiform. Name three of them on air: gray matter volume, cortical thickness, and one shape or intensity feature you are comfortable defending.",
+          "Stats: Mann–Whitney U, Benjamini–Hochberg. Do not skip the multiple-testing sentence. Listeners who skip that sentence become the people who tweet ‘p less than 0.001’ as if it were a diagnosis.",
+          "Classification: random forests for AD vs CN, AD vs MCI, MCI vs CN. Training accuracies were high — 98%, 97%, 99%. Then you say the sentence that earns trust: “Training accuracy is a compliment the model pays itself. I will not pretend that is external validation.”",
+          "Progression: multiple linear regression and ARIMA. Left fusiform GMV tracked change hardest in our fits (r around 0.97 in the prognostic models we reported). Time-series beat plain linear fits in most comparisons.",
+          "If you have a figure printed, describe it. If not, describe the shape: CN high and flat-ish, MCI sliding, AD lower, the left ventral stream falling first in our models.",
+        ],
+      },
+      {
+        heading: "What I would tell a sceptical PI (16:00–23:00)",
+        duration: "7 min",
+        lines: [
+          "Radiomics is not magic. It is reproducible measurement plus a model. If your segmentation wobbles, your radiomics wobbles.",
+          "High training accuracy with a modest feature set on one cohort is a starting gun, not a finish. Next work is held-out ADNI splits, another scanner, another field strength.",
+          "We used regions we already believed in. That is hypothesis-driven and also a bias. A whole-cortex control would make the paper harder and better.",
+          "Clinical translation is not ‘replace a neurologist’. It is ‘flag who needs a longer workup sooner’.",
+          "Tie to your current life without leaking: “I now spend my days making neuroimaging pipelines behave. The unglamorous truth of this field is that the model is the last ten percent. The first ninety is whether the T1 was even a T1.”",
+        ],
+      },
+      {
+        heading: "One image for the listener to keep (23:00–26:30)",
+        duration: "3 min",
+        lines: [
+          "Ask them to put a finger on the midline of their own skull, a few centimetres above the occipital bump, and imagine a small wedge of cortex cooling. That is the cartoon of precuneus thinning. It is a cartoon. Keep it labeled as one.",
+          "Then: the next time a headline says ‘AI detects Alzheimer's from MRI’, ask three questions. Which region. Which split. Which scanner they never saw.",
+        ],
+      },
+    ],
+    close:
+      "“I am Ishsirjan. This was BioIsh episode one. In two weeks I will talk about what it means to turn scans into a system — pipelines, not vibes. If you want the paper, it is on medRxiv: Evaluation of Precuneus and Fusiform Gyrus-Based Radiomic biomarkers for Alzheimer's disease Classification and Progression. Come argue with me. That is the point.”",
+    caption:
+      "BioIsh 1 is live. I walk through my radiomics paper on the precuneus and fusiform gyrus — 382 people, four time points, FreeSurfer features, random forests, and the bruises on our own accuracy numbers. For students, engineers, and anyone who is tired of ‘AI detects Alzheimer’s’ headlines with no methods.",
+    hashtags: [
+      "#BioIsh",
+      "#neuroscience",
+      "#Alzheimers",
+      "#radiomics",
+      "#neuroimaging",
+      "#bioinformatics",
+      "#WomenInSTEM",
+    ],
+    sources: [
+      {
+        label: "Chandok et al., medRxiv 2024.05.15.24307407",
+        url: "https://www.medrxiv.org/content/10.1101/2024.05.15.24307407v2",
+      },
+      { label: "FreeSurfer recon-all documentation" },
+      { label: "Buckner et al. on the posteromedial default network (classic DMN anatomy)" },
+    ],
+    clips: [
+      { label: "Cold open — two neighbourhoods", timestamp: "0:00–0:45" },
+      { label: "Training accuracy is a self-compliment", timestamp: "mark in edit" },
+      { label: "Three questions for an AI-AD headline", timestamp: "mark in edit" },
+    ],
+  },
+  {
+    id: "pod-ck-1",
+    kind: "podcast",
+    channel: "chardi-kala",
+    title: "Chardi Kala 1 — Haumai, rumination, and the default mode network",
+    subtitle: "A Sikh engineer holds a conversation between Gurbani and attention science without letting either side win cheaply.",
+    duration: "24–28 min",
+    whyYou:
+      "You live both rooms: a CNRS neuroimaging lab and a Punjabi Sikh life. The internet is full of people who flatten Simran into ‘meditation lowers cortisol’. You can refuse that flattening and still be precise.",
+    hook: "Haumai is not self-esteem. It is the small tight ‘I’ that narrates the day. Neuroscience has a network that loves that job. The mistake is to say they are the same thing.",
+    sections: [
+      {
+        heading: "Cold open (0:00–1:20)",
+        duration: "1 min",
+        lines: [
+          "“Sat sri akaal. I am Ishsirjan Kaur. I work on brains in a French lab, and I grew up inside Sikhi, not as a topic.”",
+          "“This is Chardi Kala. Not a path, not a granth class. Khoj. I will put a Sikh idea next to a scientific one and refuse to let either swallow the other.”",
+          "“Today: haumai. And a network in the cortex that lights when the mind talks about itself.”",
+        ],
+      },
+      {
+        heading: "What haumai is, and is not (1:20–8:00)",
+        duration: "7 min",
+        lines: [
+          "Read one short line of Gurbani you are allowed and comfortable reciting, then give your own working translation. Do not perform scholarship you do not have. Say: “I am a scientist who practices. I am not a gyaní.”",
+          "Haumai: I-am-ness. The grind of mine and me. It is not confidence. It is not ambition. A PI can have almost no haumai and still run a hard lab. A quiet person can be made entirely of it.",
+          "Five thieves as a moral psychology, not a DSM appendix. Kaam, krodh, lobh, moh, ahankar. You can name them in Punjabi first.",
+          "Chardi kala is not toxic positivity. It is a posture under hukam. You can be grieving and in chardi kala. That sentence matters because your listeners will include people who are not okay.",
+        ],
+      },
+      {
+        heading: "What the default mode network actually is (8:00–15:00)",
+        duration: "7 min",
+        lines: [
+          "DMN: medial prefrontal, posterior cingulate / precuneus, angular gyrus, and friends. Active in rest, self-talk, time travel, theory of mind.",
+          "Rumination research: when self-referential talk becomes sticky, mood follows. That is psychology with imaging correlates, not a soul detector.",
+          "Meditation studies: some show DMN down-regulation in practiced contemplatives. Effect sizes vary. Task, tradition, and scanner disagree like relatives at a wedding.",
+          "Say the guardrail twice: “If I say haumai equals DMN, I have insulted both Guru Nanak and Raichle. I will not do that.”",
+        ],
+      },
+      {
+        heading: "The honest overlap (15:00–22:00)",
+        duration: "7 min",
+        lines: [
+          "Overlap 1 — Decentering. Gurbani asks you to watch the ‘I’ without feeding it. ACT and mindfulness literature call a cousin of this decentering. Faber and colleagues have even written about Sikh scripture and ACT. Cite the existence of that paper; do not oversell it.",
+          "Overlap 2 — Practice changes a system. Naam is not a wellness app. It is a discipline. Neuroscience only gets to say: repeated attention training can change networks. That is already a lot. It is not proof of nadar.",
+          "Overlap 3 — Sangat as regulation. Isolation feeds the narrator. We will go deeper on seva next episode.",
+          "Your Montpellier sentence: walking home from IGMM, the mind writing grant-shaped stories about who you are. That is a lab form of haumai. You can smile at it. You do not have to believe it.",
+        ],
+      },
+    ],
+    close:
+      "“If you came for a TED talk that says ‘Sikhi predicted fMRI’, this is not that show. If you came to think more carefully about the ‘I’ that follows you into the scanner and into the diwan hall, stay. Episode two is seva and the social brain. I am Ishsirjan. Chardi kala.”",
+    caption:
+      "Chardi Kala 1: haumai is not self-esteem, and the default mode network is not a soul. I hold them next to each other as a Sikh who builds neuroimaging pipelines — and I refuse the cheap merge.",
+    hashtags: ["#ChardiKala", "#Sikhi", "#Gurbani", "#neuroscience", "#attention", "#MentalHealth"],
+    sources: [
+      { label: "Raichle, The Brain's Default Mode Network (Annual Review of Neuroscience)" },
+      { label: "Khalsa Diary, The Architecture of the Mind (2025) — use as a conversation partner, not gospel" },
+      { label: "Spirituality in Clinical Practice — Sikh scripture and ACT (doi 10.1037/scp0000385)" },
+      { label: "UC Riverside Sikh Studies / Gurmat and psychiatry conversations, 2025" },
+    ],
+    clips: [
+      { label: "Haumai is not self-esteem", timestamp: "mark" },
+      { label: "I will not say haumai equals DMN", timestamp: "mark" },
+    ],
+  },
+  {
+    id: "pod-bioish-2",
+    kind: "podcast",
+    channel: "bioish",
+    title: "BioIsh 2 — From scans to a system: how neuroimaging pipelines actually work",
+    subtitle: "DICOM to decision. FreeSurfer, QC, leakage, and the unglamorous engineering that makes a biomarker real.",
+    duration: "30–34 min",
+    whyYou:
+      "Your job title is not ‘content creator’. It is Assistant Engineer on automated neuroimaging pipelines. This episode is the reason BioIsh is not another explainer podcast hosted by a journalist.",
+    hook: "A beautiful model on a dirty T1 is a press release. A boring pipeline that fails loudly is science.",
+    sections: [
+      {
+        heading: "Cold open",
+        duration: "1 min",
+        lines: [
+          "“Last time I talked about two cortical neighbourhoods. Today I talk about the factory that measures them.”",
+          "“If you have never converted a folder of DICOMs into something a statistician can touch, this episode is a map. If you have, this episode is a confession.”",
+        ],
+      },
+      {
+        heading: "The stack, named (1:00–10:00)",
+        duration: "9 min",
+        lines: [
+          "Acquisition: field strength, coil, motion, the patient who swallowed at the wrong time.",
+          "Conversion: DICOM to NIfTI. Bids if you are lucky. A graveyard of folders if you are not.",
+          "Preprocess: orientation, skull strip, intensity normalization. FreeSurfer recon-all as a city with its own traffic laws.",
+          "QC: visual, automated, and the third kind — the one where you open a surface and your stomach drops.",
+          "Features: volumes, thicknesses, radiomics. Then a table. Then a model that must not have seen tomorrow’s scan in yesterday’s training.",
+          "You may mention CAV-2 and CNS gene-transfer imaging only as public knowledge from the Kremer lab’s published work: vectors that prefer neurons, axonal travel, the need to measure brains carefully. Then stop. No unpublished pipeline metrics.",
+        ],
+      },
+      {
+        heading: "Failure modes I have respect for (10:00–20:00)",
+        duration: "10 min",
+        lines: [
+          "Partial volume. A voxel is not a neuron. It is a compromise.",
+          "Site effects. The scanner is a collaborator with opinions.",
+          "Surface topology errors around the medial wall and temporal pole. Precuneus lovers, stay humble.",
+          "Leakage: subject-wise splits versus scan-wise splits. If the same person is in train and test, your AUC is a family reunion.",
+          "Point to your Leakage_Audit repo as a public habit, not a product launch.",
+        ],
+      },
+      {
+        heading: "What ‘automated’ should mean (20:00–28:00)",
+        duration: "8 min",
+        lines: [
+          "Automated is not unattended. Automated is: the same steps, the same logs, the same QC gates, a human for the exceptions.",
+          "Reproducibility is a kindness to your future self and to the clinician who will never read your Jupyter notebook.",
+          "A good pipeline is a moral object. It decides who looks like an outlier.",
+        ],
+      },
+    ],
+    close:
+      "“If you want a starter kit: learn BIDS, learn to hate your own QC last, and read one FreeSurfer error to the end before you Google. BioIsh will be back on the other Tuesday. Bring a paper.”",
+    caption:
+      "BioIsh 2: what an automated neuroimaging pipeline actually is — DICOM to features, QC, site effects, and why data leakage makes honest people publish fairy tales.",
+    hashtags: ["#BioIsh", "#neuroimaging", "#FreeSurfer", "#bioinformatics", "#OpenScience", "#CNRS"],
+    sources: [
+      { label: "BIDS specification" },
+      { label: "FreeSurfer wiki — known limitations" },
+      { label: "Kremer lab public pages on CAV-2 CNS gene transfer — background only" },
+      { label: "Your Leakage_Audit notes / repo" },
+    ],
+    clips: [
+      { label: "A beautiful model on a dirty T1", timestamp: "0:20" },
+      { label: "Leakage is a family reunion", timestamp: "mark" },
+    ],
+  },
+  {
+    id: "pod-ck-2",
+    kind: "podcast",
+    channel: "chardi-kala",
+    title: "Chardi Kala 2 — Seva, langar, and the social brain",
+    subtitle: "Why selfless work is not a productivity hack, and what social neuroscience is allowed to say about sangat.",
+    duration: "24–28 min",
+    whyYou:
+      "You have run seva-shaped rooms: NSS, Project CLAP, Hult Prize, WICCI, student government. You also know oxytocin headlines are usually garbage. This episode needs both instincts.",
+    hook: "Langar is not a soup kitchen with better branding. It is a technology for dissolving rank. The brain has opinions about rank.",
+    sections: [
+      {
+        heading: "Cold open",
+        duration: "1 min",
+        lines: [
+          "“Last time I talked about the ‘I’. Today I talk about what happens when the ‘I’ is handed a jhaadu and a 200-litre pot.”",
+          "“Seva is the most public Sikh technology and the most poorly exported. People turn it into volunteering hours. That is like calling simran a screen-time setting.”",
+        ],
+      },
+      {
+        heading: "Seva without the brochure (1:00–9:00)",
+        duration: "8 min",
+        lines: [
+          "Three doors: tan, man, dhan. Body, mind, material. You have done all three badly and well. Say one concrete memory — a langar line, a campus night, a messy NGO spreadsheet — without making yourself the hero.",
+          "Seva that still wants a photograph is not a moral failure. It is information. Notice it.",
+          "Caste, class, and who gets to serve versus who is served. Do not give a diaspora fairy tale. Montpellier will not save you from this.",
+        ],
+      },
+      {
+        heading: "What social neuroscience can add (9:00–18:00)",
+        duration: "9 min",
+        lines: [
+          "Social identity and health: feeling part of a meaningful group is one of the more robust psychological buffers we have. Haslam’s ‘social cure’ work is a fair citation if you keep it humble.",
+          "Helping and mood: volunteering studies show associations with lower depression and higher life satisfaction. Associations. Confounding lives here — healthier people can show up.",
+          "Oxytocin, ‘helper’s high’, mirror neurons: mention them as the three horsemen of lazy science communication, then move on.",
+          "Pain of exclusion is not a metaphor in anterior cingulate literature. Sangat is, among other things, an anti-exclusion machine. That is allowed. It is not the whole of sangat.",
+        ],
+      },
+      {
+        heading: "A rule for this show (18:00–23:00)",
+        duration: "5 min",
+        lines: [
+          "If a finding makes Sikhi look fashionable, slow down.",
+          "If a shabad makes a paper look small, let the paper be small.",
+          "Invite one piece of mail: “Tell me a seva that did not feel good. I am collecting those.”",
+        ],
+      },
+    ],
+    close:
+      "“I am Ishsirjan. Two shows, one month, four episodes. If you have a paper you want translated into human, or a shabad you want sat next to a method, write to me. October we bring other voices into the room. Until then — keep the pot on.”",
+    caption:
+      "Chardi Kala 2: seva is not volunteering hours, langar is not branding, and the social brain is allowed to have a modest opinion — nothing more.",
+    hashtags: ["#ChardiKala", "#Sikhi", "#Seva", "#Langar", "#Sangat", "#MentalHealth"],
+    sources: [
+      { label: "Haslam et al., The New Psychology of Health / social cure" },
+      { label: "BMC Public Health volunteering and depression literature — cite as association" },
+      { label: "Your own NSS / Project CLAP years — lived source, not a paper" },
+    ],
+    clips: [
+      { label: "Langar as a technology for dissolving rank", timestamp: "0:15" },
+      { label: "Three horsemen of lazy science communication", timestamp: "mark" },
+    ],
+  },
+]
