@@ -6,11 +6,11 @@ This is a **separate** GitHub Pages project. It does not replace [ishsirjan.gith
 
 ## GitHub repo name
 
-`neuroish.fr` (private if you can; public is fine — the site still asks for a password)
+[`Ishsirjan/Neuroish.fr`](https://github.com/Ishsirjan/Neuroish.fr) (public is fine — the site still asks for a password)
 
-Website, once Pages is on:
+Website:
 
-**https://ishsirjan.github.io/neuroish.fr/**
+**https://ishsirjan.github.io/Neuroish.fr/**
 
 In the repo: **Settings → Pages → Source: GitHub Actions**.
 
